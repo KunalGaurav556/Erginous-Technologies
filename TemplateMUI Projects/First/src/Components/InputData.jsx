@@ -1,22 +1,25 @@
 import React, { useState } from 'react'
 // import Button from '@mui/icons-material'
-import { Button, useStepperContext } from '@mui/material';
+import { Button, Card, useStepperContext } from '@mui/material';
 import { createContext } from 'react';
 import Form from './Form';
 import DashboardLayoutBasic from './DashboardLayoutBasic';
 import RecipeReviewCard from './Card';
+import Context from '../ContextAPi/Context';
 
 
 export const data1 = createContext();
 
 const InputData = () => {
-    const [productName,setProductName] = useState("");
-    const [productModel,setProductModel] = useState('');
-    const [productRating,setProductingRating] = useState('');
-    const [productPrice,setProductPrice] = useState('');
+    const [productName,setProductName] = useState("Dummy");
+    const [productModel,setProductModel] = useState('Dummy');
+    const [productRating,setProductingRating] = useState('Dummy');
+    const [productPrice,setProductPrice] = useState('Dummy');
     const [allData,setAllData] = useState([]);
 
     const name = "Gaurav";
+
+    const dataDummy = allData;
 
 
     const HandleProductName =(e)=>{
@@ -65,9 +68,18 @@ const InputData = () => {
     // const contextData = allData;
   return (
    <>
+   {/* <Context value={dataDummy}/> */}
+  
+    <div className="conatiner" style={{
+        // border:'2px solid red',
+        display:'flex',
+        justifyContent:'space-around',
+        // backgroundColor:'blue',
+        flexDirection:'column'
 
+    }}>
     <h1>Input Admin</h1>  
-    <form action="">
+    <div className="leftContainer">  <form action="">
         <label htmlFor="">Product Name : </label>
         <input type="text" onChange={HandleProductName} /><br /> <br />
 
@@ -82,7 +94,19 @@ const InputData = () => {
 
         <Button variant='contained' size='small' onClick={submit}>submit</Button>
     </form>
+    </div>
+   <div className="rightContainer" style={{
+        // border:'2px solid yellow',
+        // backgroundColor:'',
+        display:'flex',
+        flexWrap:'wrap',
+        gap:'2rem',
+        marginTop:'2rem'
+   }}>
+     <RecipeReviewCard data={dataDummy}/>
+   </div>
 
+    </div>
    </>
   )
 }

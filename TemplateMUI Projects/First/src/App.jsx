@@ -5,6 +5,7 @@ import './App.css'
 import Dummy from './Dummy'
 import DashboardLayoutBasic from './Components/DashboardLayoutBasic'
 import Form from './Components/Form'
+import Context from './ContextAPi/Context'
 
 
 
@@ -14,7 +15,6 @@ function App() {
 
   return (
     <>
-    {/* <DashboardLayoutBasic/> */}
     <Form/>
     </>
   )

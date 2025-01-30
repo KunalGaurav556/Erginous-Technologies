@@ -9,15 +9,13 @@ export const data1 = createContext();
 
 const Form = () => {
 
+  // console.log(props)
+
   const contextData = "Kunal";
 
   return (
     <>
-    {/* <h1>Form Data</h1> */}
-      <data1.Provider value={contextData}>
-        {/* <Context/> */}
-        <DashboardLayoutBasic/>
-      </data1.Provider> 
+      <DashboardLayoutBasic/>
     </>
   )
 }

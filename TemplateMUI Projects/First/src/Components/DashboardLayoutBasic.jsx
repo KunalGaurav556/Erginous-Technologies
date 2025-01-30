@@ -70,6 +70,7 @@ const NAVIGATION = [
 export default function DashboardLayoutBasic(props) {
 
   const { window } = props;
+  console.log(props)
 
 
 
@@ -88,12 +89,7 @@ export default function DashboardLayoutBasic(props) {
       <DashboardLayout>
         <PageContainer >
         <InputData/>
-          <Grid container spacing={1} style={{border:'2px solid red',display:'flex',justifyContent:"space-around",gap:'2rem'}}>          
-            <RecipeReviewCard/>
-            <RecipeReviewCard/>
-            <RecipeReviewCard/>
-            <RecipeReviewCard/>
-            {/* <Dummy/> */}
+          <Grid container spacing={1}>          
           </Grid>
         </PageContainer>
       </DashboardLayout>
