@@ -1,17 +1,17 @@
 import React from 'react'
-import { createContext } from 'react';
+// import { createContext } from 'react';
 import DashboardLayoutBasic from './DashboardLayoutBasic';
-import Context from '../ContextAPi/Context';
+// import Context from '../ContextAPi/Context';
 
 
 
-export const data1 = createContext();
+// export const data1 = createContext();
 
 const Form = () => {
 
   // console.log(props)
 
-  const contextData = "Kunal";
+  // const contextData = "Kunal";
 
   return (
     <>
