@@ -33,14 +33,10 @@ const Comments = () => {
                 <div className="cmntcard">
                   <span><b style={{color:'red'}}>ID : </b>{data.id}</span>
                   <br />
-                  <br />
-                  <span><b style={{color:'green'}}>Post ID : </b>{data.postId}</span> <br />
-                  <br />
+                  <span><b style={{color:'green'}}>Post ID : </b>{data.postId}</span><br />
                   <span><b style={{color:'red'}}>Name :</b> {data.name}</span>
                   <br />
-                  <br />
                   <span><b style={{color:'red'}}>Body :</b> {data.body}</span> <br />
-                  <br />
                 </div>
 
                 <div></div>

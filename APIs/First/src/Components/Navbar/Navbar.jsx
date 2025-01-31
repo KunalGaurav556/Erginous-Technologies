@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.Modular.css'
 import { useNavigate } from 'react-router-dom';
+import AddBtn from './AddBtn';
 
 const Navbar = () => {
 
@@ -16,6 +17,7 @@ const Navbar = () => {
                 <li onClick={()=>{navigate('/photos')}}>Photos</li>
                 <li onClick={()=>{navigate('/todos')}}>Todos</li>
                 <li onClick={()=>{navigate('/users')}}>Users</li>
+                <AddBtn/>
             </ul>
         </div>  
     </>
