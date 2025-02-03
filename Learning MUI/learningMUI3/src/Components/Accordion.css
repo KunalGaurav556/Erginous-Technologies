@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(131, 176, 124);
+}
+.Accordion{
+    background-color: bisque;
+}
+.Box{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
