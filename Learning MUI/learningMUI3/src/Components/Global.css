@@ -49,3 +49,15 @@ body{
         height: 200px;
     }
 }
+.tableHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    font-weight: 400;  
+}
+.tableHead-tableCell{
+    color: white;
+    /* background-color: red; */
+    text-align: center;
+}

@@ -13,7 +13,7 @@ function App() {
       {/* <MyTypographyComponent /> */}
       <ButtonComp/>
       <IconsMUI/>
-      {/* <BtnGroup/> */}
+      {/* <BtnGroup/>npm */}
     </>
   );
 }

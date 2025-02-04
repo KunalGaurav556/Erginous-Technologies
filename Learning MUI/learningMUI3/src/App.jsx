@@ -10,10 +10,15 @@ import BoxMUI from './Components/BoxMUI'
 import PaperAndCard from './Components/PaperAndCard'
 import AccordionMUI from './Components/AccordionMUI'
 import DrawerMUI from './Components/DrawerMUI'
-import { Avatar } from '@mui/material'
+import { Alert, Avatar, Dialog } from '@mui/material'
 import AvatarMUI from './Components/AvatarMUI'
 import BadgeMUI from './Components/BadgeMUI'
 import ListMUI from './Components/ListMUI'
+import ChipMUI from './Components/ChipMUI'
+import TableMUI from './Components/TableMUI'
+import AlertMUI from './Components/AlertMUI'
+import DialogMUI from './Components/DialogMUI'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +35,11 @@ function App() {
      {/* <DrawerMUI/> */}
      {/* <AvatarMUI/> */}
      {/* <BadgeMUI/> */}
-     <ListMUI/>
+     {/* <ListMUI/> */}
+     {/* <ChipMUI/>  */}
+     {/* <TableMUI/> */}
+     {/* <AlertMUI/> */}
+      <DialogMUI/>
     </>
   )
 }
