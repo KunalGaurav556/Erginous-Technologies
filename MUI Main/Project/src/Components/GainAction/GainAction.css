@@ -1,0 +1,61 @@
+.gainMain{
+    /* border: 2px solid red; */
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.gainActionMain{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 3.5rem;
+    width: 80%;
+}
+.gainActionLeft{
+    /* border: 2px solid blue; */
+    width: 50%;
+    text-align: end;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.gainActionRight{
+    /* border: 2px solid green; */
+    width: 50%;
+}
+.dotGain{
+    /* border: 2px solid red; */
+    width: 18px;
+    background-color: #00e5ff;
+    height: 14px;
+    border-radius: 50px;
+    position: relative;
+    top: 12px;
+    margin-right: 5px;
+    margin-left: 9px;
+}
+.gainActionRight{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 330px;
+        width: 395px;
+    }
+}
+.gainActionUpperContent{
+    width: 90%;
+    /* border: 2px solid olive; */
+}
+.gainActionTitle{
+    /* border: 2px solid red;  */
+    font-weight: bold;
+    background: linear-gradient(148deg, rgb(0, 96, 100) 0%, rgb(0, 229, 255) 100%);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

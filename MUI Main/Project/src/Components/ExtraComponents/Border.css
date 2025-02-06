@@ -1,0 +1,24 @@
+
+.gainBorderMain{
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 12px;
+}
+.gainBorderLeft{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+    /* margin-top: 6px; */
+}
+.gainBorderRight{
+    content: "";
+    width: 70px;
+    height: 12px;
+    /* bottom: -32px; */
+    border-radius: 12px;
+    /* position: absolute; */
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+
+}

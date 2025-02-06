@@ -1,0 +1,79 @@
+
+
+.mainNav{
+    /* width: 98.2vw; */
+    font-family: Montserrat, sans-serif;
+    margin-top: 0px;
+    padding: 0;
+    /* border: 2px solid red; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    padding-top: 1rem;
+    /* gap: 6rem; */
+}
+.leftNav{
+    width: 70vw;
+    /* background-color: aqua; */
+}
+.leftNavLogoTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 20%;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+#navLogoImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbarLogo{
+    /* border: 2px solid blue; */
+    height: 40px;
+    width: 50px;
+}
+#AroraNav{
+    font-size: 18px;
+    font-weight: 900;
+}
+.leftNavItems{
+    /* border: 2px solid rgb(255, 0, 0); */
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    Button{
+        /* border: 2px solid red; */
+        font-size: 13px;
+        color: black;
+        font-weight:bold ;
+    }
+}
+.rightNav{
+    /* border: 2px solid blue; */
+    width: 30vw;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#chipRegister{
+    background-color: #d1c4e9;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+    cursor: pointer;
+}
+#chipLogIn{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+#chipLogIn:hover{
+    background-color: #d1c4e9;
+}

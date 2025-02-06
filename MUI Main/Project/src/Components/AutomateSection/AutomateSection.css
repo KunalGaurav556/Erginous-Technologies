@@ -1,0 +1,15 @@
+
+#automateImg{
+    /* border: 2px solid red; */
+    width: 450px;
+    height: 550px;
+    margin-top: 5rem;
+}
+.discoverContent{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 160px;
+    color: cyan;
+    background: linear-gradient(148deg, rgb(2, 47, 252) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%) text;
+    -webkit-text-fill-color: transparent;
+}

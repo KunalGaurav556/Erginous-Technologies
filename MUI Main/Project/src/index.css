@@ -1,0 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(177, 177, 177);
+  /* width: 98vw; */
+}

@@ -1,0 +1,8 @@
+.DotBlue{
+    /* border: 2px solid red; */
+    background-color: rgb(0, 253, 0);
+    height: 17px;
+    width: 17px;
+    border-radius: 20px;
+    background: linear-gradient(148deg, rgb(49, 27, 146) 0%, rgb(101, 31, 255) 100%);
+}

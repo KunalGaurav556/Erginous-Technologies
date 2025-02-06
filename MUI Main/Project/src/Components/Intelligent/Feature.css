@@ -1,0 +1,24 @@
+.intelligentHaading{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        /* border:2px solid rgb(0, 0, 0); */
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 38px;
+        font-weight: 800;
+
+    }
+}
+.intelligentTitle{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.87);
+}
