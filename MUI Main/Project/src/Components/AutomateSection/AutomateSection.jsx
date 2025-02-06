@@ -24,7 +24,7 @@ const AutomateSection = () => {
         </Stack>
     </Stack>
     <Stack className='discoverSection'>
-        <Typography className='discoverContent' fontSize={"170px"} fontWeight={'700'}>DISCOVER</Typography>
+        <Typography className='discoverContent' fontSize={"200px"} fontWeight={'700'}>DISCOVER</Typography>
     </Stack>
     </>
   )

@@ -4,7 +4,7 @@ import MemoryIcon from '@mui/icons-material/Memory';
 import './GainCardPosition.css'
 import Icon from "@mdi/react";
 import { mdiClockTimeEightOutline } from "@mdi/js";
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import BorderComp from '../ExtraComponents/Border';
 
 
