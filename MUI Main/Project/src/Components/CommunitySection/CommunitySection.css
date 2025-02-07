@@ -1,0 +1,39 @@
+.communitySectionHeading{
+    /* border: 2px solid red; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.communitySectionHeadinDot{
+    /* border: 2px solid red; */
+    height: 12px;
+    width:12px;
+    border-radius: 50%;
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+}
+.communitySectionHeadingLine{
+    /* border: 2px solid blue; */
+    height: 12px;
+    width: 70px;
+    border-radius: 12px;
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+}
+
+/* communitySectionTitle */
+
+.communitySectionTitle{
+    border: 2px solid red;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2.5rem;
+    color: #000000DE;
+}
+.githubCommunity{
+    /* background-color: rgb(255, 0, 0); */
+    color: rgb(153, 0, 255);
+    font-size: 200px;
+    border: 30px solid blueviolet;
+    border-radius: 100%;
+}

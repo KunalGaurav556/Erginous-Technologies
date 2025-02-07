@@ -11,6 +11,7 @@ import HarnessSection from './Components/HarnessSection/HarnessSection'
 import GainAction from './Components/GainAction/GainAction'
 import AutomateSection from './Components/AutomateSection/AutomateSection'
 import DiscoverSection from './Components/DiscoverSection/DiscoverSection'
+import CommunitySection from './Components/CommunitySection/CommunitySection'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <GainAction/>
       <AutomateSection/>
       <DiscoverSection/>
+      <CommunitySection/>
     </>
   )
 }

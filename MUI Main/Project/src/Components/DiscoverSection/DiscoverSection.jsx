@@ -23,9 +23,9 @@ const DiscoverSection = () => {
                 <Stack className='discoverCardSectionStack1'>
                     <Card className='discoverCard1' elevation={0}>
                         <CardContent className="discoverIconContent">
-                            <i id='leftChatIcon' class="mdi mdi-comment-text"></i>
+                            <i id='leftChatIcon' className="mdi mdi-comment-text"></i>
                             <i id='midIconDiscoverCard' className="mdi mdi-ansible"></i>
-                            <i id='rightIconTick' class="mdi mdi-shield-check-outline"></i>
+                            <i id='rightIconTick' className="mdi mdi-shield-check-outline"></i>
                         </CardContent>
                         <CardContent>
                             <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
@@ -45,9 +45,9 @@ const DiscoverSection = () => {
                 <Stack className='discoverCardSectionStack1'>
                     <Card className='discoverCard1' elevation={0}>
                         <CardContent className="discoverIconContent">
-                            <i id='leftChatIcon' class="mdi mdi-nut"></i>
+                            <i id='leftChatIcon' className="mdi mdi-nut"></i>
                             <i id='midIconDiscoverCard' className="mdi mdi-collage"></i>
-                            <i id='rightIconTick' class="mdi mdi-tooltip-image"></i>
+                            <i id='rightIconTick' className="mdi mdi-tooltip-image"></i>
                         </CardContent>
                         <CardContent>
                             <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
@@ -66,9 +66,9 @@ const DiscoverSection = () => {
                 <Stack className='discoverCardSectionStack1' >
                     <Card className='discoverCard1' elevation={0}>
                         <CardContent className="discoverIconContent">
-                            <i id='leftChatIcon' class="mdi mdi-hammer-screwdriver"></i>
+                            <i id='leftChatIcon' className="mdi mdi-hammer-screwdriver"></i>
                             <i id='midIconDiscoverCard' className="mdi mdi-cog"></i>
-                            <i id='rightIconTick' class="mdi mdi-code-braces-box"></i>
+                            <i id='rightIconTick' className="mdi mdi-code-braces-box"></i>
                         </CardContent>
                         <CardContent>
                             <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
@@ -78,6 +78,11 @@ const DiscoverSection = () => {
                 </Stack>
             </Stack>
         </Stack>
+
+        
+    <Stack className='communityHeading'>
+        <Typography variant='h1' fontSize={"180px"} fontWeight={'800'}>COMMUNITY</Typography>
+    </Stack>
     </>
   )
 }

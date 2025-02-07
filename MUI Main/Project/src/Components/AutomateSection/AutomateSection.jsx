@@ -8,6 +8,7 @@ const AutomateSection = () => {
     <Stack className="harnessMainSection" direction={"row"}>
         <Stack className='harnessLeftSection'>
             <img src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/feature3_2x_idh2mq.png" alt="HarnessLogo" id='automateImg'/>
+            <img id='bookBackground' src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/parallax_zqaizh.png" alt="" />
         </Stack>
         <Stack className='harnessRightSection' direction={"row"}>
             <Stack className='harnessContent'>
@@ -26,6 +27,7 @@ const AutomateSection = () => {
     <Stack className='discoverSection'>
         <Typography className='discoverContent' fontSize={"200px"} fontWeight={'700'}>DISCOVER</Typography>
     </Stack>
+
     </>
   )
 }
