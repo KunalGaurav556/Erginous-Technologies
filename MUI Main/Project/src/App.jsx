@@ -10,6 +10,7 @@ import Feature from './Components/Intelligent/Feature'
 import HarnessSection from './Components/HarnessSection/HarnessSection'
 import GainAction from './Components/GainAction/GainAction'
 import AutomateSection from './Components/AutomateSection/AutomateSection'
+import DiscoverSection from './Components/DiscoverSection/DiscoverSection'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <HarnessSection/>
       <GainAction/>
       <AutomateSection/>
+      <DiscoverSection/>
     </>
   )
 }
