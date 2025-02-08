@@ -12,6 +12,7 @@ import GainAction from './Components/GainAction/GainAction'
 import AutomateSection from './Components/AutomateSection/AutomateSection'
 import DiscoverSection from './Components/DiscoverSection/DiscoverSection'
 import CommunitySection from './Components/CommunitySection/CommunitySection'
+import QuestionSection from './Components/QuestionSection/QuestionSection'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <AutomateSection/>
       <DiscoverSection/>
       <CommunitySection/>
+      <QuestionSection/>
     </>
   )
 }

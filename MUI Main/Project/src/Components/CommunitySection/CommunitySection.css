@@ -1,3 +1,13 @@
+.communitySectionAllLogoSection{
+    /* border: 2px solid green; */
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    height: 120vh;
+}
+
 .communitySectionHeading{
     /* border: 2px solid red; */
     text-align: center;
@@ -24,16 +34,155 @@
 /* communitySectionTitle */
 
 .communitySectionTitle{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    margin-bottom: 4rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 2.5rem;
     color: #000000DE;
+    opacity: 0.7;
 }
-.githubCommunity{
-    /* background-color: rgb(255, 0, 0); */
-    color: rgb(153, 0, 255);
-    font-size: 200px;
-    border: 30px solid blueviolet;
-    border-radius: 100%;
+
+/* GITHUB SECTION  */
+.upperSideCommunitySection{
+    /* border: 2px solid red; */
+    padding-left: 4.3rem;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.svGithub{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.githubStackCommunity{
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: rgb(247, 245, 245);
+    opacity: 0.6;
+    justify-content: center;
+    align-items: center;
+    height:260px;
+    width: 260px;
+    border-radius: 50%;
+    position: absolute;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.githubStackCommunity:hover{
+    transform: scale(1.1);
+}
+
+/* Teligram Section  */
+
+.teliMainCommunity{
+    /* border: 2px solid red; */
+    position: relative  ;
+    right: 1.5rem;
+    opacity: 0.8;
+}
+
+.teligramIconCommunity{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 197px;
+    width: 199px;
+    border-radius: 50%;
+    top: 4.66rem;
+    left: 1.94rem;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: rgb(252, 252, 252);
+}   
+.teligramIconCommunity:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+
+/* Youtube Section  */
+.teliMainCommunity{
+    height: 350px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.YoutubeIconCommunity{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    left: 1.5rem;
+    top: 6.1rem;
+}
+.YoutubeIconCommunity:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.Youtube{
+    /* border: 2px solid blue; */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0.6rem;
+}
+.podcast{
+    /* border: 2px solid olive; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    right: 0.5rem;
+    bottom: 2.9rem;
+}
+.Discorrd{
+    /* border: 2px solid red; */
+    position: relative;
+    right: 2rem;
+
+}
+
+/* lowerCommunityIcon */
+
+.lowerCommunityIcon{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    bottom: 8rem;
+}
+.Mail{
+    /* border: 2px solid green; */
+    position: relative;
+    bottom: 2rem;
+}
+.Reddit{
+    /* border: 2px solid blue; */
+    position: relative;
+    top: 1.7rem;
+    right:2.5rem ;
+    
+}
+.facebook{
+    /* border: 2px solid green; */
+    position: relative;
+    top: 0.7rem;
+    right: 4rem;
 }

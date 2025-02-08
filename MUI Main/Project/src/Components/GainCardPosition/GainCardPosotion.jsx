@@ -4,7 +4,6 @@ import MemoryIcon from '@mui/icons-material/Memory';
 import './GainCardPosition.css'
 import Icon from "@mdi/react";
 import { mdiClockTimeEightOutline } from "@mdi/js";
-import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import BorderComp from '../ExtraComponents/Border';
 
 
@@ -29,13 +28,13 @@ const GainCardPosotion = () => {
                     </Card>
 
                     <Card className='cardMemory' sx={{border:'none',boxShadow:'none'}}>
-                    <CardContent className='main'>
+                        <CardContent className='main'>
                             <CardContent className='cardPositionMemoriIcon'>
                              <Icon id="clockCard" path={mdiClockTimeEightOutline} size={5} className="clock-icon cardMemoryIcon" />
                             </CardContent>
                             <CardContent className='cardMemoryPositionCardContent'>
-                            <Typography variant='h4'>+600</Typography>
-                            <Typography variant='body' id='cardbodyVirtual'>Virtual Machine</Typography>
+                                <Typography variant='h4'>+600</Typography>
+                                <Typography variant='body' id='cardbodyVirtual'>Virtual Machine</Typography>
                             </CardContent>
                         </CardContent>
                     </Card>
