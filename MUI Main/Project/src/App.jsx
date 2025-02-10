@@ -13,6 +13,7 @@ import AutomateSection from './Components/AutomateSection/AutomateSection'
 import DiscoverSection from './Components/DiscoverSection/DiscoverSection'
 import CommunitySection from './Components/CommunitySection/CommunitySection'
 import QuestionSection from './Components/QuestionSection/QuestionSection'
+import CardSection from './Components/CardSection/CardSection'
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <DiscoverSection/>
       <CommunitySection/>
       <QuestionSection/>
+      <CardSection/>
     </>
   )
 }

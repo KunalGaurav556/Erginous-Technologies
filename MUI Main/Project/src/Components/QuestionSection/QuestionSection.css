@@ -1,4 +1,67 @@
-.mainQuestionStack{
-    border: 2px solid green;
-    
+
+.leftQuestionSide{
+    /* border: 2px solid red ; */
+    padding:1rem ;
+    text-align: left;
+    width: 92%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
+#leftSideRobot{
+    /* border: 2px olive rgb(0, 0, 0); */
+    width: 440px;
+    position: relative;
+    bottom: 5.8rem;
+    left: 3rem;
+}
+.questionBorderbox{
+    /* border: 2px solid slateblue; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 12px;
+    margin-top: 15px;
+    align-items: center;
+}
+.QuestionBorderDot{
+    /* border: 2px solid red; */
+    height: 12px;
+    width: 12px;
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+    border-radius: 12px;
+}
+.QuestionBorderLine{
+    /* border: 2px solid blue; */
+    height: 12px;
+    width: 70px;
+    background: linear-gradient(148deg, rgb(132, 255, 255) 0%, rgb(209, 196, 233) 46%, rgb(248, 187, 208) 100%);
+    border-radius: 12px;
+}
+.leftMainQuestion{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.rightQuestionSide{
+    /* border:  2px solid rgb(255, 251, 0); */
+    width: 90%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+.AccordionQuestion{
+    font-size: 24px;
+    padding: 16px 32px 16px 0px;
+    border-radius: 30px;
+    /* box-shadow: none !important; */
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 1px 1px 13px 0.5px rgb(194, 191, 191) !important;
+}
+
+  

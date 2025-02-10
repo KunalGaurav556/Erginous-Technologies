@@ -31,7 +31,7 @@ function App() {
      {/* <AutoComplete/> */}
      {/* <BoxMUI/> */}
      {/* <PaperAndCard/> */}
-     {/* <AccordionMUI/> */}
+     <AccordionMUI/>
      {/* <DrawerMUI/> */}
      {/* <AvatarMUI/> */}
      {/* <BadgeMUI/> */}
@@ -39,7 +39,7 @@ function App() {
      {/* <ChipMUI/>  */}
      {/* <TableMUI/> */}
      {/* <AlertMUI/> */}
-      <DialogMUI/>
+      {/* <DialogMUI/> */}
     </>
   )
 }
