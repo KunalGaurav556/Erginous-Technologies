@@ -3,19 +3,19 @@
 
 .mainPageMainStack {
     /* border: 2px solid red; */
-    height: 70vh;
+    height: 100vh;
     font-family: Montserrat, sans-serif;
-    background-image: url('https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/banner_ai_m7ru8l.png');
+    background-image: url('https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/fog_r7nvlh.png');
     background-position: center;
     background-size: cover;
     text-align: center;
     display: flex;
-    align-items: center;
+    /* align-items: center;     */
     justify-content: center;
     overflow: hidden;
     position: relative;
     animation: fadeInBackground 1.5s ease-in-out;
-    padding: 4rem;
+    /* padding: 4rem; */
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -26,12 +26,13 @@
 
 .mainLeft {
     /* border: 2px solid blue; */
-    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-   
+    /* padding: 1.122rem; */
+    position: relative;
+    top: 7rem;
 }
 
 .mainLeft h1 {
@@ -41,7 +42,7 @@
 }
 .mainLeft span {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
     display: inline-block;
     opacity: 0;

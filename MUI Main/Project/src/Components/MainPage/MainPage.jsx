@@ -6,9 +6,9 @@ const MainPage = () => {
   return (
     <>
         <Stack direction={'row'} className='mainPageMainStack'>
-            <Stack className='mainLeft'>
-                <Typography variant='h1'>Next level of innovation with <Typography component="span">AI-POWERED</Typography></Typography>
-                <Typography className='mainPageDive' variant='h5'>Dive into the world and transform your ideas into intelligent solutions.</Typography>
+            <Stack className='mainLeft' spacing={3}>
+                <Typography variant='h1'>Next level of innovation with <Typography component={'span'} fontWeight={'900'}className='aiPowered'>AI-POWERED</Typography></Typography>
+                <Typography className='mainPageDive' fontSize={'28px'} fontWeight={'600'} letterSpacing={'0.4px'}>Dive into the world and transform your ideas into intelligent solutions.</Typography>
                
                 <Stack direction={'row'} spacing={5} className='mainpageBtns'>
                   <Button id='mainPageGetBtn'>GET STARTED</Button>

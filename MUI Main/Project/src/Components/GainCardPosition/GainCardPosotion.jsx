@@ -72,7 +72,7 @@ const GainCardPosotion = () => {
                 <Stack className='gainActionUpperStack'>
                    <Stack>
                         <Stack>
-                            <Typography className='gainHeading' variant='h2' sx={{fontWeight:'900',fontSize:'44px',fontFamily:"Montserrat,sans-serif"}}>Gain Actionable Insights From Your Data</Typography>
+                            <Typography className='gainHeading' variant='h3' sx={{fontWeight:'bolder',fontSize:'44px',fontFamily:"Montserrat,sans-serif"}}>Gain Actionable Insights From Your Data</Typography>
                         </Stack>
                          
                          <BorderComp/>
