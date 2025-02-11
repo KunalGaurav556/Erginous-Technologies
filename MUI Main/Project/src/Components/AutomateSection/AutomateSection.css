@@ -6,7 +6,6 @@
     position: relative;
     top: 19rem;
     right: 3rem;
-
 }
 .discoverContent{
     /* border: 2px solid red; */
@@ -21,11 +20,11 @@
 #bookBackground{
     border: 2px solid red;
     position: relative;
-    bottom: 10rem;
+    bottom: 15rem;
     right: 4rem;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     filter: blur(100px);
     opacity: 0.7;
 }

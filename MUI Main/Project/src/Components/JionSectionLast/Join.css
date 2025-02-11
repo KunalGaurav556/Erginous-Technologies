@@ -1,0 +1,51 @@
+.joinMainSection{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.contentSectionJoin{
+    /* border: 2px solid red; */
+    height: 150px;
+    padding-top: 2rem;
+    position: relative;
+    top: 1rem;
+    gap: 1rem;
+}
+.mainJoinContentSection{
+    /* border: 2px solid blue; */
+    text-align: center;
+    height:450px ;
+    width: 1010px;
+    background: linear-gradient(rgb(132, 255, 255) 10%, rgb(248, 187, 208) 100%);
+    border-radius: 70px;
+}
+.joinUpperCap{
+    /* border: 2px solid green; */
+    height: 150px;
+    width: 1000px;
+    clip-path: polygon(13% 0%, 0% 100%, 100% 100%, 87% 0px);
+    background: linear-gradient(transparent 35%, rgb(132, 255, 255) 80%);
+    position: relative;
+    top: 2.5rem;
+}
+.BtnSection{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    top: 1.7rem;
+}
+.imgStack{
+    /* border: 2px  solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnStart{
+    width: 150px;
+    background-color: green;
+}

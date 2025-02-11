@@ -9,7 +9,7 @@ const GainAction = () => {
          <Stack className='gainActionMain' direction={"row"}>
             <Stack className='gainActionLeft'>
                <Stack className='gainActionUpperContent' direction={"row"}>      
-                 <Typography variant='h2' className='gainActionTitle' sx={{fontSize:'32px',fontWeight:'600'}}>Gain Actionable Insights From Your Data</Typography>
+                 <Typography variant='h2' className='gainActionTitlee' sx={{fontSize:'32px',fontWeight:'600',}}>Gain Actionable Insights From Your Data</Typography>
                  <Stack className='dotGain'>
                     <Typography ></Typography>
                  </Stack>

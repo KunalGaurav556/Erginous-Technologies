@@ -2,8 +2,10 @@ import React from 'react'
 import {Stack,Typography,Link, Accordion, Chip, Button} from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings';
 import './Navbar.css'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const Navigate = useNavigate();
   return (
     <>
         <Stack className='mainNav' direction={"row"}>
@@ -15,7 +17,7 @@ const Navbar = () => {
                     <Typography id='AroraNav' variant='h3'>Awrora</Typography>
                 </Stack>
                 <Stack className='leftNavItems' direction={"row"}>
-                    <Button>Features</Button>
+                    <Button onClick={()=>{Navigate('/')}}>Features</Button>
                     <Button>Discover</Button>
                     <Button>Community</Button>
                     <Button>FAQ</Button>
@@ -23,8 +25,8 @@ const Navbar = () => {
                 </Stack>
             </Stack>
             <Stack className='rightNav' direction={'row'}>              
-                    <Chip label='LOGIN' id='chipLogIn'/>
-                    <Chip label='REGISTER' id='chipRegister'/>
+                    <Chip label='LOGIN' id='chipLogIn' sx={{paddingTop:'6px',paddingBottom:'6px'}} onClick={()=>{Navigate('/LogInPage')}} />
+                    <Chip label='REGISTER' id='chipRegister'sx={{paddingTop:'6px',paddingBottom:'6px'}}/>
                     <SettingsIcon/>
             </Stack>
         </Stack>

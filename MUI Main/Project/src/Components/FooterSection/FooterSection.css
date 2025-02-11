@@ -1,0 +1,113 @@
+.mainFooter{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 330px;
+    opacity: 0.8;
+    padding: 2px;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.footerAwrora{
+    /* border: 2px solid blue; */
+    width: 310px;
+    padding: 1rem;
+}
+.imgSectionFooter{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;   
+    img{
+        width: 50px;
+    }
+}
+
+.companySectionFooter{
+    /* border: 2px solid black; */
+    width: 200px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.ResourcesFooterSection{
+    /* border: 2px solid red; */
+    width: 200px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.legalSectionFooter{
+    /* border: 2px solid blue; */
+    width: 200px;
+    padding: 1rem;
+}
+.iconSectionFooter{
+    /* border: 2px solid green; */
+    width: 230px;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.footerHeading{
+    /* border: 2px solid red; */
+    font-size: 18px;
+    font-weight: 800;
+
+}
+.languageSelector{
+    /* border: 2px solid blue; */
+    width: 250px;
+}
+.iconSection{
+    /* border: 2px solid red; */
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#iconFooter{
+    /* border: 2px solid blue; */
+    border-radius: 50%;
+    padding: 6px;
+    background: rgb(209, 196, 233);
+    color: 'rgb(49, 27, 146)';
+}
+#iconFooter:hover{
+    background: rgb(233, 228, 241);
+    transition: 0.22s ease-in-out;
+}
+
+
+
+.mainFooter {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    height: 330px;
+    opacity: 0.8;
+    padding: 2px;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: relative;
+    overflow: hidden;
+}
+
+.mainFooter::before {
+    content: "";
+    position: absolute;
+    top: -19rem;
+    transform: rotate(-93deg);
+    left: 25rem;
+    width: 242px;
+    height: 1397px;
+    background-image: url(https://verselion.netlify.app/images/ai/parallax.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(47px);
+    opacity: 0.8;
+    z-index: -1;
+}

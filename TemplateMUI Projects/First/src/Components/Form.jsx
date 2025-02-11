@@ -11,7 +11,7 @@ const Form = () => {
 
   return (
     <>
-      <DashboardLayoutBasic/>gti 
+      <DashboardLayoutBasic/>
     </>
   )
 }

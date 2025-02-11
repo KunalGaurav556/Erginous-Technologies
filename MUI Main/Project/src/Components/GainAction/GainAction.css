@@ -48,10 +48,10 @@
     }
 }
 .gainActionUpperContent{
-    width: 90%;
+    width: 500px;
     /* border: 2px solid olive; */
 }
-.gainActionTitle{
+.gainActionTitlee{
     /* border: 2px solid red;  */
     font-weight: bold;
     background: linear-gradient(148deg, rgb(0, 96, 100) 0%, rgb(0, 229, 255) 100%);

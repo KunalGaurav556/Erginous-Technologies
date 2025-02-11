@@ -70,6 +70,7 @@
     color: rgba(0, 0, 0, 0.05);
     font-size: 120px;
     transform: rotate3d(3, -100, 150, 20deg);
+
 }
 #leftChatIcon{
     /* border: 2px solid green; */
