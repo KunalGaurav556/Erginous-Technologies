@@ -1,6 +1,7 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 import './GainAction.css'
+import './GainMedia.css'
 
 const GainAction = () => {
   return (
@@ -19,7 +20,9 @@ const GainAction = () => {
                </Stack>
             </Stack>
             <Stack className='gainActionRight'>
-                <img src="https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/feature2_2x_ztsr7p.png" alt="" />
+            <img id='roundbg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/parallax_zqaizh.png" alt="" />
+                <img id='roundImg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/feature2_2x_ztsr7p.png" alt="" />
+              
             </Stack>
         </Stack>
        </Stack>

@@ -130,9 +130,6 @@ const CommunitySection = () => {
 
           <Stack className="teliMainCommunity Youtube">
             <Stack className="teligramCommunity">
-              {/* <SvgIcon style={{ transform: "rotate(0deg)" }}>
-                <use href="/images/decoration/circle-medium.svg#main"></use>
-              </SvgIcon> */}
 
               <svg
                 width="200px"
@@ -262,10 +259,6 @@ const CommunitySection = () => {
         <Stack direction={"row"} className="lowerCommunityIcon">
           <Stack className=" Twitter">
             <Stack className="teligramCommunity">
-              {/* <SvgIcon style={{ transform: "rotate(0deg)" }}>
-                <use href="/images/decoration/circle-medium.svg#main"></use>
-              </SvgIcon> */}
-
               <svg
                 width="260px"
                 height="343px"

@@ -115,7 +115,7 @@
     align-items: start;
     height: 700px;
     position: relative;
-    /* bottom: 4rem; */
+    bottom: 23rem;
 }
 .leftCardMainSection-left{
     /* border: 2px solid blue; */
@@ -124,7 +124,7 @@
     align-items: start;
     height: 700px;
     position: relative;
-    top: 4rem;
+    top: 2rem;
 }
 .RightGainPosition{
     width: 49%;
@@ -177,6 +177,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-top: 2rem;
 }
 #gainFeatueHeading{
     /* border: 2px solid green; */
@@ -185,7 +186,7 @@
     font-size: 200px;
     width: 90%;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
     /* margin-top: 1.3rem; */
     /* letter-spacing: 9px; */
 }

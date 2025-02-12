@@ -5,8 +5,8 @@ import "./AutomateSection.css";
 const AutomateSection = () => {
   return (
     <>
-      <Stack className="harnessMainSection" direction={"row"}>
-        <Stack className="harnessLeftSection">
+      <Stack className="harnessMainSection autoMain" direction={"row"}>
+        <Stack className="harnessLeftSection automateImg">
           <img
             src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/feature3_2x_idh2mq.png"
             alt="HarnessLogo"
@@ -18,17 +18,16 @@ const AutomateSection = () => {
             alt=""
           />
         </Stack>
-        <Stack className="harnessRightSection" direction={"row"}>
-          <Stack className="harnessContent">
-            <Stack className="HarnessDot" direction={"row"}>
-              <Typography className="DotBlue"></Typography>
+        <Stack className="harnessRightSection autoRight" direction={"row"}>
+          <Stack className="harnessContent autoContent">
+            <Stack className="HarnessDot autoHead" direction={"row"}>
+              <Typography className="DotBlue autoDot"></Typography>
               <Typography
                 variant="h4"
                 className="harnessHeading"
-                sx={{ fontWeight: "600" }}
-              >
+                sx={{ fontWeight: "600" }}>
                 {" "}
-                Harness The Power of Predictive Modeling.
+                Automate repetitive tasks
               </Typography>
             </Stack>
             <Stack className="harnessContent">

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Card, CardContent, Stack, Typography } from '@mui/material'
 import './discoverSection.css'
-import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import "@mdi/font/css/materialdesignicons.min.css";
 
 
@@ -22,6 +21,7 @@ const DiscoverSection = () => {
 
                 <Stack className='discoverCardSectionStack1'>
                     <Card className='discoverCard1' elevation={0}>
+                        <Typography className='cardShadow'></Typography>
                         <CardContent className="discoverIconContent">
                             <i id='leftChatIcon' className="mdi mdi-comment-text"></i>
                             <i id='midIconDiscoverCard' className="mdi mdi-ansible"></i>
@@ -31,6 +31,7 @@ const DiscoverSection = () => {
                             <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
                             <Typography variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
                         </CardContent>
+                    
                     </Card>
                 </Stack>
 

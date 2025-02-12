@@ -5,20 +5,19 @@ import './GainCardPosition.css'
 import Icon from "@mdi/react";
 import { mdiClockTimeEightOutline } from "@mdi/js";
 import BorderComp from '../ExtraComponents/Border';
-
+import './GainCardMedia.css'
 
 const GainCardPosotion = () => {
   return (
     <>
         <Stack className='mainStackGainPosition' direction={"row"}>
-            <Stack className='leftStackGainPosition' direction={"row"}>
-                <Stack className='leftCardMainSection' direction={"row"}>
-                    <Stack className='leftCardMainSection-left'>
+            <Stack className='leftStackGainPosition'>
+                <Stack className='leftCardMainSection' >
+                    <Stack className='leftCardMainSection-left' direction={'row'}>
                     <Card className='cardMemory' sx={{border:'none',boxShadow:'none'}}>
                         <CardContent className=''>
                             <CardContent className='cardPositionMemoriIcon'>
                                 <MemoryIcon className="memoryIcon" sx={{fontSize:'6.6rem', color:'blueviolet'}}/>
-                                {/* <Icon id="clockCard" path={mdiClockTimeEightOutline} size={5.5} className="clock-icon cardMemoryIcon" /> */}
                             </CardContent>
                             <CardContent className='cardMemoryPositionCardContent'>
                             <Typography variant='h4'>+600</Typography>
@@ -39,7 +38,7 @@ const GainCardPosotion = () => {
                         </CardContent>
                     </Card>
                     </Stack> 
-                    <Stack className='leftCardMainSection-Right' >
+                    <Stack className='leftCardMainSection-Right' direction={'row'}>
                     <Card className='cardMemory' sx={{border:'none',boxShadow:'none'}}>
                         <CardContent className=''>
                             <CardContent className='cardPositionMemoriIcon'>
@@ -82,6 +81,7 @@ const GainCardPosotion = () => {
                 <Stack className='gainActionLowerStack'>
                 <Box className="rightGainVideo">
                     <iframe
+                    id='gainYoutube'
                     width="640"
                     height="360"
                     src="https://www.youtube.com/embed/ugGOo8_ufXM"
@@ -96,7 +96,7 @@ const GainCardPosotion = () => {
             </Stack>
         </Stack>
         <Stack className='gainFeature'>
-            <Typography variant='h1' id='gainFeatueHeading'>FEATURE</Typography>
+            <Typography  id='gainFeatueHeading' fontWeight={'900'} fontSize={'235px'}>FEATURE</Typography>
         </Stack>
     </>
   )

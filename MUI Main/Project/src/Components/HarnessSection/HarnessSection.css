@@ -1,6 +1,6 @@
 .harnessMainSection{
     /* border: 2px solid red; */
-    height: 90vh;
+    height: 99vh;
     gap: 5rem;
 }
 .harnessLeftSection{
@@ -35,7 +35,7 @@
     /* border: 2px solid red; */
     height: 15px;
     width: 25px;
-    background-color: blue;
+    background-color: rgb(16, 16, 176);
     border-radius: 40px;
     position: relative;
     top: 10px;
@@ -53,4 +53,5 @@
 .harnessHeading{
     font-size: 32px;
     color: rgb(101, 31, 255);
+    background-color: rgb(101, 31, 255) text;
 }

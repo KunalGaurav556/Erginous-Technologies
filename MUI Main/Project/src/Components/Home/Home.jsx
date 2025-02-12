@@ -13,38 +13,33 @@ import QuestionSection from '../QuestionSection/QuestionSection'
 import CardSection from '../CardSection/CardSection'
 import Join from '../JionSectionLast/Join'
 import Footer from '../FooterSection/FooterSection'
+import './Home.css';
+import { Stack } from '@mui/material'
 
 const Home = () => {
   return (
     <>  
-        <Navbar/>
+      <Stack className='homeMain'>
+
+        <Stack className='NavStack'>
+          <Navbar/>
+        </Stack>
+
+
         <MainPage/>
         <SlideBtn/>
         <GainCardPosotion/>
-        <Feature/>
-        <HarnessSection/>
-        <GainAction/>
-        <AutomateSection/>
-        <DiscoverSecton/>
-        <CommunitySection/>
-        <QuestionSection/>
-        <CardSection/>
-        <Join/>
-        <Footer/>
-
-        {/* <MainPage />
-        <SlideBtn />
-        <GainCardPosotion />
-        <Feature />
-        <HarnessSection />
-        <GainAction />
-        <AutomateSection />
-        <DiscoverSection />
-        <CommunitySection />
-        <QuestionSection />
-        <CardSection />
-        <Join />
-        <FooterSection /> */}
+        {/* <Feature/> */}
+        {/* <HarnessSection/> */}
+        {/* <GainAction/> */}
+        {/* <AutomateSection/> */}
+        {/* <DiscoverSecton/> */}
+        {/* <CommunitySection/> */}
+        {/* <QuestionSection/> */}
+        {/* <CardSection/> */}
+        {/* <Join/> */}
+        {/* <Footer/> */}
+      </Stack>
     </>
   )
 }

@@ -1,0 +1,67 @@
+
+@media only screen and (max-width: 990px) {
+    .mainNav{
+        /* border: 2px solid red; */
+        display: none !important;
+    }
+    .mMStack{
+        display: block;
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem;
+        /* width: 100%; */
+    }   
+    .mMStack img{
+        width: 65px;
+        height: 50px;   
+    }
+    .mMArora{
+        /* border: 2px solid green; */
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 50%;
+    }
+    .mMLRBtns{
+        /* border: 2px solid blue;  */
+        gap:0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mMLRBtns Button{
+        /* border: 2px solid red; */
+        border-radius:15px;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+    }
+    #mMRegisterBtn{
+        background-color: rgb(214, 214, 250);
+        color: blue;
+        
+    }
+}
+
+
+@media only screen and (max-width:560px){
+    #mMLogInBtn{
+        display: none;
+    }
+    #mMRegisterBtn{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:990px){
+    .mMStack{
+        display: none !important;
+    }
+}
+  

@@ -8,7 +8,7 @@ const Feature = () => {
     <>  
         {/* Heading Section */}
         <Stack className='intelligentHaading'>
-           <Typography variant='h2' className='intelligentHeadingTitle'>Intelligent AI And Content Analysis</Typography>
+           <Typography className='intelligentHeadingTitle' fontSize={'45px'} fontWeight={'800'}>Intelligent AI And Content Analysis</Typography>
           <Box className="boxBorderComponent">
             <BorderComp/>
           </Box>

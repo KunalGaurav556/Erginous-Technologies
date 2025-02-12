@@ -51,6 +51,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+              id='hoverEffect'
             >
               Team
             </Typography>
@@ -58,6 +59,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               History
             </Typography>
@@ -65,6 +67,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Contact us
             </Typography>
@@ -72,6 +75,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Locations
             </Typography>
@@ -94,6 +98,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Reources
             </Typography>
@@ -101,6 +106,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Rosources name
             </Typography>
@@ -108,6 +114,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Another resources
             </Typography>
@@ -115,6 +122,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Final resources
             </Typography>
@@ -128,6 +136,7 @@ const FooterSection = () => {
               fontWeight={"800"}
               fontSize={"18px"}
               color="rgb(49,27,146)"
+
             >
               Legal
             </Typography>
@@ -136,6 +145,7 @@ const FooterSection = () => {
             <Typography
               fontSize={"1rem"}
               fontWeight={"400"}
+                id='hoverEffect'
               color="rgba(0,0,0,0.87"
             >
               Privacy Policy
@@ -144,6 +154,7 @@ const FooterSection = () => {
               fontSize={"1rem"}
               fontWeight={"400"}
               color="rgba(0,0,0,0.87"
+                id='hoverEffect'
             >
               Terms of use
             </Typography>

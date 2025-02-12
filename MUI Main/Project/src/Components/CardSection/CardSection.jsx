@@ -53,7 +53,7 @@ const CardSection = () => {
           return(
             <Card sx={{width:'280px',height:'400px'}} className='mainCard'>
               <CardContent className='cardImgSction'>
-                <img src={data.img} alt="" width={'250px'} height={'190px'}/>
+                <img src={data.img} alt="" width={'250px'} height={'190px'} id='cardImgSection'/>
               </CardContent>
               <CardContent>
                 <Typography fontSize={'0.75rem'} fontWeight={'600'}>{data.headline}</Typography>

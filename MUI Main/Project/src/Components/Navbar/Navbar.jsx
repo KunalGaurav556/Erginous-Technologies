@@ -3,6 +3,8 @@ import {Stack,Typography,Link, Accordion, Chip, Button} from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings';
 import './Navbar.css'
 import { useNavigate } from 'react-router-dom';
+import './NavbarMedia.css';
+import AnchorTemporaryDrawer from '../Menu/Manu';
 
 const Navbar = () => {
     const Navigate = useNavigate();
@@ -29,6 +31,22 @@ const Navbar = () => {
                     <Chip label='REGISTER' id='chipRegister'sx={{paddingTop:'6px',paddingBottom:'6px'}}/>
                     <SettingsIcon/>
             </Stack>
+        </Stack>
+
+        {/* MediaQuery  */}
+
+        <Stack direction={'row'} className='mMStack'>
+            <Stack direction={'row'} className='mMArora'>
+                <img src="https://verselion.netlify.app/_next/static/images/logo-verselion-53c3f39c69e67bfb482ee97245f61e7f.png" alt="" />
+                <Typography fontSize={'20px'} fontWeight='800'>Awrora</Typography>
+            </Stack> 
+
+            <Stack direction={'row'} className='mMLRBtns'>
+                <Button id='mMLogInBtn'>LogIn</Button>
+                <Button id='mMRegisterBtn'>Register</Button><hr />
+                <SettingsIcon/>
+                <AnchorTemporaryDrawer/>
+            </Stack>   
         </Stack>
     </>
   )

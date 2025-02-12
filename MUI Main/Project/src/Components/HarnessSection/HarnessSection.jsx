@@ -9,7 +9,7 @@ const HarnessSection = () => {
             <Stack className='harnessLeftSection'>
                 <img src="https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/feature1_2x_tjihji.png" alt="HarnessLogo" />
             </Stack>
-            <Stack className='harnessRightSection' direction={"row"}>
+            <Stack className='harnessRightSection' direction={"row"} spacing={3}>
                 <Stack className='harnessContent'>
                     <Stack className='HarnessDot' direction={"row"}>
                         <Typography className='DotBlue'></Typography>
