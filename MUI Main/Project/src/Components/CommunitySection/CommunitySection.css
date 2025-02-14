@@ -16,6 +16,10 @@
     align-items: center;
     gap: 1rem;
 }
+#twitterC{
+    position: absolute;
+    left: 10rem;
+}
 .communitySectionHeadinDot{
     /* border: 2px solid red; */
     height: 12px;

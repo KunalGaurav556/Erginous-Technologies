@@ -1,0 +1,60 @@
+@media only screen and (max-width: 990px) {
+    .communitySectionAllLogoSection{
+        display: none !important;
+    }
+    .gitMainMedia {
+        /* border: 2px solid red !important; */
+        display: flex;
+        flex-direction: row !important;
+        gap: 1rem;
+        align-items: center;
+        overflow-x: auto !important;
+        white-space: nowrap; 
+        padding-left: 2rem;
+    }
+    
+    
+    .gitLogo {
+        flex-shrink: 0; /* Prevent shrinking */
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(101, 31, 255) !important;
+        opacity: 0.8;
+    }
+    #TeligramMedia{
+        border: 1px solid rgb(0, 229, 255) !important;
+    }
+    #mailMedia{
+        border: 1px solid rgb(255, 64, 129) !important;
+    }
+    
+}
+
+
+@media only screen and (min-width: 990px) {
+    .communitySectionAllLogoSection{
+        display: block !important;
+    }
+    .gitMainMedia{
+        display: none !important;
+    }
+   
+}
+
+@media only screen and (max-width : 600px){
+    #joinMedia{
+        /* border: 2px solid blue; */
+        font-size: 28px !important;
+        opacity: 0.7;
+    }
+    #developeMedia{
+        font-size: 16px !important;
+    }
+}
+
+
+

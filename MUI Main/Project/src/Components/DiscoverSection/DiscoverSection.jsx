@@ -2,13 +2,14 @@ import React from 'react'
 import { Box, Card, CardContent, Stack, Typography } from '@mui/material'
 import './discoverSection.css'
 import "@mdi/font/css/materialdesignicons.min.css";
+import './DiscoverMedia.css'
 
 
 const DiscoverSection = () => {
   return (
     <>
         <Stack className='discoverHeadingStay'>
-            <Typography variant='h3' sx={{fontWeight:'800', fontSize:'38px'}}>Stay AT The Forefront Of Technology</Typography>
+            <Typography className='stay' variant='h3' sx={{fontWeight:'800', fontSize:'38px'}}>Stay AT The Forefront Of Technology</Typography>
             <Box className='dotBoxDiscover'>
                 <Typography id='leftDotDiscover'></Typography>
                 <Typography id='rightDotDiscover'></Typography>
@@ -27,9 +28,9 @@ const DiscoverSection = () => {
                             <i id='midIconDiscoverCard' className="mdi mdi-ansible"></i>
                             <i id='rightIconTick' className="mdi mdi-shield-check-outline"></i>
                         </CardContent>
-                        <CardContent>
-                            <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
-                            <Typography variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
+                        <CardContent  className='rCard'>
+                            <Typography id='processSection' variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
+                            <Typography  id='processSection' variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
                         </CardContent>
                     
                     </Card>
@@ -50,9 +51,9 @@ const DiscoverSection = () => {
                             <i id='midIconDiscoverCard' className="mdi mdi-collage"></i>
                             <i id='rightIconTick' className="mdi mdi-tooltip-image"></i>
                         </CardContent>
-                        <CardContent>
-                            <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
-                            <Typography variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
+                        <CardContent className='rCard'>
+                            <Typography id='processSection'  variant='h6' fontSize={"20px"} fontWeight={"800"} >Selection</Typography>
+                            <Typography  id='processSection' variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
                         </CardContent>
                     </Card>
                 </Stack>
@@ -71,9 +72,9 @@ const DiscoverSection = () => {
                             <i id='midIconDiscoverCard' className="mdi mdi-cog"></i>
                             <i id='rightIconTick' className="mdi mdi-code-braces-box"></i>
                         </CardContent>
-                        <CardContent>
-                            <Typography variant='h6' fontSize={"20px"} fontWeight={"800"} >Processing</Typography>
-                            <Typography variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
+                        <CardContent className='rCard'>
+                            <Typography  id='processSection' variant='h6' fontSize={"20px"} fontWeight={"800"} >Deployment</Typography>
+                            <Typography  id='processSection' variant='body' fontSize={"16px"}>Prepare and Collect data for analysis</Typography>
                         </CardContent>
                     </Card>
                 </Stack>
@@ -82,7 +83,7 @@ const DiscoverSection = () => {
 
         
     <Stack className='communityHeading'>
-        <Typography variant='h1' fontSize={"180px"} fontWeight={'800'}>COMMUNITY</Typography>
+        <Typography id='community' variant='h1' fontSize={"180px"} fontWeight={'800'}>COMMUNITY</Typography>
     </Stack>
     </>
   )

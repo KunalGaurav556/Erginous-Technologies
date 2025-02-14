@@ -1,6 +1,15 @@
 @media only screen and (max-width:990px){
     #gainFeatueHeading{
+        /* border: 2px solid red; */
         font-size: 120px !important;
+        margin-top: 0px;
+        margin: 0px;
+    }
+    .gainFeature{
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .mainStackGainPosition{
         /* border: 2px solid green; */
@@ -43,7 +52,7 @@
 @media only screen and (max-width:480px){
     #gainFeatueHeading{
         font-size: 40px !important;
-        /* border: 2px solid red; */
+        border: 2px solid red;
         height: auto;
     }
 }

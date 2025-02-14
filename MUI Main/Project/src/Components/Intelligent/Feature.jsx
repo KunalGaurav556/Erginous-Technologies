@@ -2,6 +2,7 @@ import { Box, Stack ,Typography} from '@mui/material'
 import React from 'react'
 import './Feature.css'
 import BorderComp from '../ExtraComponents/Border'
+import './FeatureMedia.css'
 
 const Feature = () => {
   return (

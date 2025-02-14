@@ -29,12 +29,12 @@ const Home = () => {
         <MainPage/>
         <SlideBtn/>
         <GainCardPosotion/>
-        {/* <Feature/> */}
-        {/* <HarnessSection/> */}
-        {/* <GainAction/> */}
-        {/* <AutomateSection/> */}
-        {/* <DiscoverSecton/> */}
-        {/* <CommunitySection/> */}
+        <Feature/>
+        <HarnessSection/>
+        <GainAction/>
+        <AutomateSection/>
+        <DiscoverSecton/>
+        <CommunitySection/>
         {/* <QuestionSection/> */}
         {/* <CardSection/> */}
         {/* <Join/> */}

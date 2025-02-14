@@ -1,0 +1,83 @@
+@media only screen and (max-width : 990px){
+    .harnessMainSection{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse !important;
+        gap: 0px;
+        height: fit-content;
+        width: 99%;
+        /* padding: 2rem; */
+        margin-top: 2rem;
+    }
+    .HarnessDot{
+        /* border: 2px solid rgb(255, 255, 62); */
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+    .DotBlue{
+        /* border: 2px solid black; */
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        text-align: center;
+
+    }
+    .harnessHeading{
+        /* border: 2px solid green; */
+        width: 90%;
+        text-align: center;
+        font-size: 32px !important;
+    }
+    .harnessRightSection{
+        /* border: 2px solid blue; */
+        width: 100% !important;
+    }
+    .harnessContent{
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+    }
+    #prediveHarness{
+        width: 90%;
+        font-size: 20px !important;
+        /* border: 2px solid rgb(17, 255, 0); */
+        br{
+            display: none;
+        }
+    }
+
+    .harnessLeftSection{
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width:590px){
+    .harnessHeading{
+        /* border: 2px solid red; */
+        font-size: 24px !important;
+    }
+    #prediveHarness{
+        font-size: 16px !important;
+    }
+    .harnessLeftSection{
+        /* border: 2px solid green; */
+        img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+}
+

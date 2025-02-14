@@ -1,6 +1,7 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 import './HarnessSection.css'
+import './HarnessMedia.css'
 
 const HarnessSection = () => {
   return (
@@ -16,7 +17,7 @@ const HarnessSection = () => {
                          <Typography variant='h4' className='harnessHeading' sx={{fontWeight:'600'}}>  Harness The Power of Predictive Modeling.</Typography>
                     </Stack>
                     <Stack className='harnessContent'>
-                        <Typography variant='body'>
+                        <Typography variant='body' id='prediveHarness'>
                         Predictive analytics to anticipate trends, <br /> behaviors, and outcomes, giving you a <br /> competitive edge.
                         </Typography>
                     </Stack>

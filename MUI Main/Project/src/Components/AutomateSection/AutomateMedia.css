@@ -1,0 +1,65 @@
+@media only screen and (max-width : 990px){
+    .autoMain{
+        /* border: 2px solid red !important; */
+        height: fit-content;
+        gap: 1rem !important;
+    }
+    .discoverSection{
+        /* border: 2px solid red; */
+        font-size: 120px !important;
+    }
+    #bookBackground{
+        display: none !important;
+    }
+    .discoverContent{
+        /* border: 2px solid red; */
+        font-size: 120px !important;
+    }
+    .automateImg{
+        /* border: 2px solid blue; */
+        justify-content: center;
+        align-items: center;     
+        height: fit-content;
+        #automateImg{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            max-width: 370px;
+            max-height: 450px;
+        }
+    }
+    .harnessContent{
+        br{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .discoverContent{
+        /* border: 2px solid rgb(0, 255, 13) !important; */
+        font-size: 90px !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .discoverContent{
+        /* border: 2px solid rgb(0, 255, 13) !important; */
+        font-size: 30px !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #predictive{
+        /* border: 2px solid green; */
+        font-size: 16px;
+    }
+    #automateImg{
+        width: 95%;
+        height: 95%;
+    }
+}

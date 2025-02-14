@@ -13,12 +13,13 @@ import RedditIcon from "@mui/icons-material/Reddit";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { IonIcon } from "@ionic/react";
 import { logoGithub } from "ionicons/icons";
+import './CommunityMedia.css';
 
 const CommunitySection = () => {
   return (
     <>
       <Stack className="communitySectionHeading">
-        <Typography fontSize={"38px"} fontWeight={"800"}>
+        <Typography id='joinMedia' fontSize={"38px"} fontWeight={"800"}>
           Join Us On This Exciting Journey!
         </Typography>
         <Stack direction={"row"} spacing={1}>
@@ -28,9 +29,9 @@ const CommunitySection = () => {
       </Stack>
 
       <Stack className="communitySectionTitle">
-        <Typography fontSize={"26px"}>
+        <Typography id='developeMedia' fontSize={"26px"}>
           Developing beneficial AI systems requires people from a wide range of
-          disciplines and backgrounds
+          disciplines and backgrounds.
         </Typography>
       </Stack>
 
@@ -283,7 +284,7 @@ const CommunitySection = () => {
                 </g>
               </svg>
 
-              <Stack className="teligramIconCommunity">
+              <Stack className="teligramIconCommunity" id='twitterC'>
                 <TwitterIcon
                   sx={{ fontSize: "80px", color: "rgb(0, 229, 255)" }}
                 />
@@ -433,7 +434,143 @@ const CommunitySection = () => {
             </Stack>
           </Stack>
         </Stack>
+      </Stack> 
+
+
+      {/* Media Query */}
+
+      <Stack className="gitMainMedia">
+        <Stack className="gitLogo">
+              <IonIcon
+                className="githubCommunity"
+                icon={logoGithub}
+                style={{ fontSize: "100px", color:'rgb(101, 31, 255)' }}
+              />
+
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(101, 31, 255)"
+              >
+                Github
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo" id='TeligramMedia'>
+            <SendIcon
+                  sx={{ fontSize: "100px", color: "rgb(0, 229, 255)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(0, 229, 255)"
+              >
+                Teligram
+              </Typography>
+        </Stack>
+
+
+        <Stack className="gitLogo" id='TeligramMedia'>
+              <TwitterIcon
+                  sx={{ fontSize: "100px", color: "rgb(0, 229, 255)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color= "rgb(0, 229, 255)"
+              >
+                Twitter
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo" id='mailMedia'>
+              <MailIcon
+                  sx={{ fontSize: "100px", color: "rgb(255, 64, 129)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(255, 64, 129)"
+              >
+                Mail
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo">
+              <RedditIcon
+                  sx={{ fontSize: "100px", color:"rgb(101, 31, 255)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(101, 31, 255)"
+              >
+                Reddit
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo"  id='TeligramMedia'>
+              <FacebookIcon
+                  sx={{ fontSize: "100px", color: " rgb(0, 229, 255)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color=" rgb(0, 229, 255)"
+              >
+                Facebook
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo" id='mailMedia' >
+              <YouTubeIcon
+                  sx={{ fontSize: "100px", color: "rgb(255, 64, 129)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(255, 64, 129)"
+              >
+                Mail
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo" id='mailMedia'>
+              <PodcastsIcon
+                  sx={{ fontSize: "100px", color: "rgb(255, 64, 129)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(255, 64, 129)"
+              >
+                Podcast
+              </Typography>
+        </Stack>
+
+        <Stack className="gitLogo">
+              <ForumIcon
+                  sx={{ fontSize: "100px", color: "rgb(101, 31, 255)" }}
+                />
+              <Typography
+                className="githubTypoCommunity"
+                fontSize={"20px"}
+                fontWeight={"600"}
+                color="rgb(101, 31, 255)"
+              >
+                Discord
+              </Typography>
+        </Stack>
       </Stack>
+
     </>
   );
 };

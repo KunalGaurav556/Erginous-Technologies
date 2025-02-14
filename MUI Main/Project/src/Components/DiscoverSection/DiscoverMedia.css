@@ -1,0 +1,109 @@
+@media only screen and (max-width:990px){
+    .communityHeading{
+        /* border: 2px solid red; */
+        font-size: 120px !important;
+        margin: 2rem;
+    }
+    #community{
+        /* border: 2px solid black; */
+        font-size: 120px;
+    }
+}
+
+@media only screen and (max-width:840px){
+    .communityHeading{
+        /* border: 2px solid red; */
+        font-size: 120px !important;
+    }
+    #community{
+        /* border: 2px solid black; */
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .communityHeading{
+        /* border: 2px solid red; */
+        font-size: 120px !important;
+    }
+    #community{
+        /* border: 2px solid black; */
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width:900px){
+    .discoverCardSeperators{
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width:640px){
+    .discoverMainCardSection{
+        /* border: 2px solid blue;` */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+    }
+  .discoverCard1{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .cardShadow{
+    display: none;
+  }
+  .discoverIconContent{
+    /* border: 2px solid black; */
+    position: relative;
+    top: 0px;
+    height: auto;
+    width: fit-content;
+    padding: 0px;
+    border-radius: 0%;
+    width: 90px;
+  }
+  #leftChatIcon{
+    font-size: 40px;
+  }
+  #midIconDiscoverCard{
+    font-size: 80px;
+  }
+  #rightIconTick{
+    font-size: 35px;
+  }
+  #processSection{
+    /* border: 2px solid green; */
+    text-align: start;
+    font-size: 16px !important;
+  }
+
+  .discoverCardSectionStack1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rCard{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  .discoverCardSectionStack1{
+    box-shadow: 2px 2px 12px 2px rgb(241, 240, 240);
+  }
+
+ .stay{
+    font-size: 28px !important;
+    padding: 1rem;
+    font-weight: 400;
+ }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
 import "./AutomateSection.css";
+import './AutomateMedia.css'
 
 const AutomateSection = () => {
   return (
@@ -31,7 +32,7 @@ const AutomateSection = () => {
               </Typography>
             </Stack>
             <Stack className="harnessContent">
-              <Typography variant="body">
+              <Typography id='predictive' variant="body">
                 Predictive analytics to anticipate trends, <br /> behaviors, and
                 outcomes, giving you a <br /> competitive edge.
               </Typography>

@@ -16,12 +16,12 @@ const GainAction = () => {
                  </Stack>
                </Stack>
                <Stack className='gainActionUpperContent'>
-                <Typography variant='body' sx={{fontSize:'20px',color:'#000000DE'}}>Data Insights will enabling you to make informed decisions and drive impactful results</Typography>
+                <Typography className='dataInsight' variant='body' sx={{fontSize:'20px',color:'#000000DE'}}>Data Insights will enabling you to make informed decisions and drive impactful results</Typography>
                </Stack>
             </Stack>
             <Stack className='gainActionRight'>
-            <img id='roundbg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/parallax_zqaizh.png" alt="" />
-                <img id='roundImg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/feature2_2x_ztsr7p.png" alt="" />
+              <img id='roundbg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612282/bungalion/ai/parallax_zqaizh.png" alt="" />
+              <img id='roundImg' src="https://res.cloudinary.com/skyrev/image/upload/v1692612281/bungalion/ai/feature2_2x_ztsr7p.png" alt="" />
               
             </Stack>
         </Stack>
