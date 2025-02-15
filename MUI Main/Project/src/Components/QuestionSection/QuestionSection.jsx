@@ -2,6 +2,7 @@ import { Accordion, AccordionDetails, AccordionSummary, Box, Stack, styled, Typo
 import React, { useState } from "react";
 import "./QuestionSection.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"; 
+import './QuestionMedia.css'
 
 const QuestionSection = () => {
 
@@ -73,8 +74,8 @@ const QuestionSection = () => {
               obj.map((data,index)=>{
                 return(
                   <Accordion onChange={()=>handleAccordionExpand(index)} expanded={expand===index} className="AccordionQuestion" sx={{bgcolor:expand===index? '#651FFF' : '',color:expand===index? 'white' : ''}}>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon/>} sx={{fontSize:'24px',fontWeight:'600',opacity:'0.9'}}>{data.Summary}</AccordionSummary>
-                    <AccordionDetails>{data.Details}</AccordionDetails>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon/>} sx={{fontSize:'24px',fontWeight:'600',opacity:'0.9'}} className="mAccordionSummary">{data.Summary}</AccordionSummary>
+                    <AccordionDetails className="mAccordionDetails">{data.Details}</AccordionDetails>
                   </Accordion>
                 )
               })

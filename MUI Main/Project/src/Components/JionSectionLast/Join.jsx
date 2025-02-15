@@ -1,6 +1,7 @@
 import React from "react";
 import "./Join.css";
 import { Button, Stack, Typography } from "@mui/material";
+import './JoinMedia.css'
 
 const Join = () => {
   return (
@@ -9,10 +10,10 @@ const Join = () => {
       <Stack className="joinUpperCap"></Stack>
         <Stack className="mainJoinContentSection">
           <Stack className="contentSectionJoin">
-            <Typography variant="h3" fontSize={'48px'} fontWeight={'800'}>
+            <Typography variant="h3" className="joinBody" fontSize={'48px'} fontWeight={'800'}>
               Join us on this exciting journey!
             </Typography>
-            <Typography fontWeight={400} fontSize={'22px'}>
+            <Typography fontWeight={400} className="unlockJoin" fontSize={'22px'}>
               Unlock the potential of AI and drive innovation for your business.
             </Typography>
           </Stack>

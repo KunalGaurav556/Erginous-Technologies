@@ -1,0 +1,28 @@
+@media only screen and (max-width:640px){
+    .HeadingNews{
+        font-size: 28px !important;
+    }
+    .HeadingNews{
+        font-size: 28px;
+    }
+    #readMedia{
+        font-size: 16px !important;
+    }
+
+}
+
+@media only screen and (max-width:990px){
+    .CardMainStack {
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+      }
+    
+      .CardMainStack > * {
+        /* min-width: 250px;  */
+        flex-shrink: 0; 
+      }
+}

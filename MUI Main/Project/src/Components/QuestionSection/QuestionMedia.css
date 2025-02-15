@@ -1,0 +1,36 @@
+@media only screen and (max-width:986px){
+    .mainQuestionStack{
+        /* border: 2px solid red !important;     */
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftMainQuestion{
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+   .mAccordionSummary{
+    /* border: 2px solid red !important; */
+    font-size: 16px !important;
+   }
+   .mAccordionDetails{
+    font-size: 16px !important;
+   }
+   .rightQuestionSide{
+    width: 98% !important;
+    /* border: 2px solid red !important; */
+    padding: 0px;
+   }
+   .AccordionQuestion{
+    width: 80% !important;
+    /* border: 2px solid blue !important;    */
+   }
+   .rightQuestionSide{
+    /* border: 2px solid blue; */
+    margin-top: 2.8rem;
+   }
+}

@@ -35,10 +35,10 @@ const Home = () => {
         <AutomateSection/>
         <DiscoverSecton/>
         <CommunitySection/>
-        {/* <QuestionSection/> */}
-        {/* <CardSection/> */}
-        {/* <Join/> */}
-        {/* <Footer/> */}
+        <QuestionSection/>  
+        <CardSection/>
+        <Join/>
+        <Footer/>
       </Stack>
     </>
   )

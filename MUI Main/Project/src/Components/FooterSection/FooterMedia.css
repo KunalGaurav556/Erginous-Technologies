@@ -1,0 +1,71 @@
+@media only screen and (max-width: 990px) {
+    .mainFooter {
+        /* border: 2px solid red !important; */
+        display: none !important;
+    }
+    .mMediaMainFooter{
+        /* border: 2px solid red !important; */
+        width: 97%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 50px;
+        }
+    }
+    .upperStack{
+        /* border: 2px solid red !important; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row !important; 
+        gap: 2px;
+    }
+    .mFooterAwora{
+        /* border: 2px solid red; */
+        font-size: 21px !important;
+        font-weight: 800 !important;
+    }
+    .diveMediaFooterSection{
+        /* border: 2px solid blue; */
+        color: rgb(67, 67, 67);
+        text-align: center;
+    }
+    .diveMediaStack{
+        margin-top: 1rem;
+    }
+    .mAccordionSummary{
+        font-size: 18px;
+        font-weight: 600;  
+    }
+    .mAccordionDetails{
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        gap: 10px;
+        flex-direction: column !important;
+        li{
+            list-style: none;
+        }
+    }
+
+    .mAccordinFooter{
+        /* border: 2px solid red; */
+        width: 80%;
+        margin-top: 2rem;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .mAccordionFooter{
+        /* border: 2px solid blue; */
+        border-radius: 12px !important;
+        box-shadow: 2px 2px 12px 2px rgb(216, 214, 214) !important;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .mMediaMainFooter{
+        display: none !important;
+    }
+}

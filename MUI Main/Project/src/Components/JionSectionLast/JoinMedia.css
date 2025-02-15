@@ -1,0 +1,64 @@
+@media only screen and (max-width :990px){
+    .joinMainSection{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: fit-content;
+        /* padding: 1rem; */
+        margin-top: 2rem;
+    }
+    .joinUpperCap{
+        width: 79%;
+        position: relative;
+        top: 3rem;
+        /* border: 2px solid blue; */
+    }
+    .mainJoinContentSection{
+        /* border: 2px solid green; */
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width:870px){
+    .joinUpperCap{
+        display: none !important;
+    }
+    .mainJoinContentSection{
+        width: 95%;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 300px; */
+        gap: 0px;
+    }
+    .joinBody{
+        /* border: 2px solid rebeccapurple; */
+        font-size: 28px !important;
+    }
+    .unlockJoin{
+        /* border: 2px solid red; */
+        font-size: 16px !important;
+    }
+    .BtnSection{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column !important;
+        width: 90%;
+        gap: 10px;
+        /* margin-top: 10px; */
+        Button{
+            width: 90%;
+        }
+    }
+    .imgStack{
+        display: none !important;
+    }
+    .contentSectionJoin{
+        /* border: 2px solid green; */
+        height: fit-content;
+        position: initial;
+
+    }
+    
+
+}

@@ -3,6 +3,7 @@ import React from 'react'
 import './Feature.css'
 import BorderComp from '../ExtraComponents/Border'
 import './FeatureMedia.css'
+import './IntelligentMedia.css'
 
 const Feature = () => {
   return (

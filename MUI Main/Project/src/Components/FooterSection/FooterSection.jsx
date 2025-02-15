@@ -1,4 +1,4 @@
-import { Autocomplete, Stack, TextField, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Autocomplete, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 import "./FooterSection.css";
 import { StayCurrentLandscape } from "@mui/icons-material";
@@ -7,6 +7,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LanguageSelector from "../ExtraComponents/OptionLanguage/OptionLanguage";
+import './FooterMedia.css';
+import { ExpandMore } from "@mui/icons-material";
 
 const FooterSection = () => {
   return (
@@ -172,6 +174,54 @@ const FooterSection = () => {
             <LanguageSelector />
           </Stack>
         </Stack>
+      </Stack>
+
+
+      {/* Media Query  */}
+      <Stack className="mMediaMainFooter">
+        <Stack className="upperStack">
+            <img src="https://verselion.netlify.app/_next/static/images/logo-verselion-53c3f39c69e67bfb482ee97245f61e7f.png" alt="" />
+            <Typography className="mFooterAwora">Awrora</Typography>
+        </Stack>
+
+        <Stack className="diveMediaStack">
+          <Typography className="diveMediaFooterSection">Dive into the world and transform your ideas into intelligent solutions.</Typography>
+        </Stack>
+
+        <Stack className="mAccordinFooter">
+          
+        <Accordion className="mAccordionFooter">
+            <AccordionSummary className="mAccordionSummary" expandIcon={<ExpandMore/>}>Company</AccordionSummary>
+            <AccordionDetails className="mAccordionDetails">
+              <li>Team</li>
+              <li>Contact us</li>
+              <li>History</li>
+              <li>Locations</li>
+            </AccordionDetails>
+          </Accordion>
+
+
+          <Accordion className="mAccordionFooter">
+            <AccordionSummary className="mAccordionSummary"  expandIcon={<ExpandMore/>}>Resources</AccordionSummary>
+            <AccordionDetails className="mAccordionDetails">
+              <li>Resources</li>
+              <li>Resources Name</li>
+              <li>Another Resources</li>
+              <li>Finaal Resource</li>
+            </AccordionDetails>
+          </Accordion>
+
+
+          <Accordion className="mAccordionFooter">
+            <AccordionSummary className="mAccordionSummary"  expandIcon={<ExpandMore/>}>Legal</AccordionSummary>
+            <AccordionDetails className="mAccordionDetails">
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+            </AccordionDetails>
+          </Accordion>
+
+        </Stack>
+
       </Stack>
     </>
   );

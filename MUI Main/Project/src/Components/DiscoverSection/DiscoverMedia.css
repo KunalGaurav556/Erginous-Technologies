@@ -6,7 +6,7 @@
     }
     #community{
         /* border: 2px solid black; */
-        font-size: 120px;
+        font-size: 115px;
     }
 }
 
@@ -37,6 +37,9 @@
     .discoverCardSeperators{
         display: none !important;
     }
+    #community{
+      font-size: 46px !important;
+     }
 }
 
 
@@ -106,4 +109,24 @@
     padding: 1rem;
     font-weight: 400;
  }
+ #community{
+  font-size: 40px !important;
+ }
+}
+
+@media only screen and (max-width : 450px){
+  .stay{
+    font-size: 28px !important;
+    margin-top: 1.7rem !important;
+  }
+  .discoverCardSectionStack1{
+    /* border: 2px solid red !important; */
+    width: 90%;
+    padding: 8px;
+  }
+  #community{
+    text-align: center;
+    /* border: 2px solid red; */
+    font-size: 28px !important;
+  }
 }

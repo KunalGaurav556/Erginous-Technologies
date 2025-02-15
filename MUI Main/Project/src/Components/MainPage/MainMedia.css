@@ -50,3 +50,20 @@
     }
 
 }
+
+@media only screen and (max-width : 470px){
+    .mainLeft{
+        height: fit-content;
+        /* border: 2px solid red !important; */
+    }
+    .nextLevelMain{
+        font-size: 28px !important;
+    }
+    .mainPageDive{
+        font-size: 18px !important;
+        color: rgb(84, 84, 84);
+    }
+    .mainPageMainStack{
+        width: 99%;
+    }
+}

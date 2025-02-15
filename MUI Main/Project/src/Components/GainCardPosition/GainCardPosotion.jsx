@@ -69,7 +69,7 @@ const GainCardPosotion = () => {
             </Stack>
             <Stack className='RightGainPosition'>
                 <Stack className='gainActionUpperStack'>
-                   <Stack>
+                   <Stack className='gainHeadingBorderStack'>
                         <Stack>
                             <Typography className='gainHeading' variant='h3' sx={{fontWeight:'bolder',fontSize:'44px',fontFamily:"Montserrat,sans-serif"}}>Gain Actionable Insights From Your Data</Typography>
                         </Stack>
