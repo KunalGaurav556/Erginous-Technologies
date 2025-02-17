@@ -48,7 +48,9 @@ const DashBoard = () => {
 
   return (
     <>
-      <div className="dashContainer">
+
+    
+<div className="dashContainer">
         <input
           type="text"
           value={data.title}
@@ -79,7 +81,7 @@ const DashBoard = () => {
         />
         <button onClick={handleSubmit}>+</button>
       </div>
-
+    
       {dummy.map((user, index) => {
         return (
             <div style={{
@@ -92,15 +94,18 @@ const DashBoard = () => {
                 alignItems:'center',
                 justifyContent:'space-around'
             }} key={index}>
-                <span>{user.title}</span>
-                <span>{user.ProductType}</span>
-                <span>{user.Quantity}</span>
-                <span>{user.Price}</span>
+              {/* <input type="text" value={index}/> */}
+                <input type="text" value={user.title} />
+                <input type="text" value={user.ProductType} />
+                <input type="text" value={user.Quantity}/>
+                <input type="text" value={user.Price} />
                 <button onClick={()=>{handlePlus(index)}}>+</button>
                 <button onClick={()=>{handleRemove(index)}}>Remove</button>
             </div>    
         )
       })}
+
+
     </>
   );
 };
