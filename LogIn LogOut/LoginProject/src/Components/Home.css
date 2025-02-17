@@ -1,0 +1,53 @@
+.container{
+    /* border: 2px solid red !important; */
+    display: flex;
+    width: 99%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: bisque;    
+
+}
+.leftSidebar{
+    border: 2px solid green !important;
+    width: 285px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 98vh;
+    background-color: gray;
+    color: white;
+    /* position: absolute; */
+
+    margin: 0;
+    ul{
+        /* border: 2px solid yellow; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    li{
+        /* border: 2px solid blue; */
+        padding:13px;
+        width: 10rem;
+        font-size: 16px;
+        list-style: none;
+        cursor: pointer;
+    }
+    li:hover{
+        /* border: 2px solid red; */
+        background-color: rgb(250, 86, 86);
+        border-radius: 15px;
+    }
+}
+
+.RightSideDashBoard{
+    border: 2px solid blue !important;
+    width: 80%;
+}
