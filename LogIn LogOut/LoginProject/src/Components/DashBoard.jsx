@@ -1,4 +1,7 @@
 import React, { useEffect, useState, useTransition } from "react";
+import "./DashBoard.css";
+import AddCostomer from "./AddCostomer";
+import CartSummary from "./CartSummary";
 
 const DashBoard = () => {
   const [data, setData] = useState({
@@ -10,47 +13,61 @@ const DashBoard = () => {
 
   const [dummy, setDummy] = useState([]);
 
+  
+  useEffect(() => {
+    const storedData = JSON.parse(localStorage.getItem('dashBoardData'));
+    if (storedData) {
+      setDummy(storedData);
+    }
+  }, []);
+
   const handleInput = (e) => {
+    e.preventDefault();
     const name = e.target.name;
     const value = e.target.value;
     setData({ ...data, [name]: value });
   };
 
-  const handleSubmit = () => {
-    if(data.title==='' || data.ProductType==='' || data.Quantity==='' || data.Price===''){
-        alert('fill all the section');
+  const handleSubmit = (e) => {
+    e.preventDefault ();
+    if (
+      data.title === "" ||
+      data.ProductType === "" ||
+      data.Quantity === "" ||
+      data.Price === ""
+    ) {
+      alert("fill all the section");
+    } else {
+
+      const updatedDummy = [...dummy, data];
+      setDummy(updatedDummy); 
+      localStorage.setItem('dashBoardData', JSON.stringify(updatedDummy));
+
+      setData({
+        title: "",
+        ProductType: "",
+        Quantity: "",
+        Price: "",
+      });
     }
-    else{
-        setDummy([...dummy, data]);
-        setData({
-          title: "",
-          ProductType: "",
-          Quantity: "",
-          Price: "",
-        });
-    }  
   };
-  useEffect(() => {
-    // console.log(dummy)
-  }, [dummy]);
 
-  const handleRemove = (index)=>{
-    const updatedData = dummy.filter((_,idx)=> idx !==index);
+  const handleRemove = (index) => {
+    const updatedData = dummy.filter((_, idx) => idx !== index);
     setDummy(updatedData);
-  }
+    localStorage.setItem('dashBoardData', JSON.stringify(updatedData)); 
+  };
 
-
-  const handlePlus = (index)=>{
+  const handlePlus = (index) => {
     const updateData = [...dummy];
-    updateData[index].Quantity++
+    updateData[index].Quantity++;
     setDummy(updateData);
-  }
+    localStorage.setItem('dashBoardData', JSON.stringify(updateData)); 
+  };
 
   return (
     <>
-
-    
-<div className="dashContainer">
+      <div className="dashContainer">
         <input
           type="text"
           value={data.title}
@@ -76,36 +93,39 @@ const DashBoard = () => {
           type="number"
           value={data.Price}
           name="Price"
-          placeholder="Price"
+          placeholder="$Price"
           onChange={handleInput}
         />
-        <button onClick={handleSubmit}>+</button>
+        <button onClick={handleSubmit}>ADD</button>
       </div>
-    
-      {dummy.map((user, index) => {
-        return (
-            <div style={{
-                display:'flex',
-                width:'95%',
-                border:'2px solid red',
-                gap:'1rem',
-                padding:'1rem',
-                justifyContent:'center',
-                alignItems:'center',
-                justifyContent:'space-around'
-            }} key={index}>
-              {/* <input type="text" value={index}/> */}
-                <input type="text" value={user.title} />
-                <input type="text" value={user.ProductType} />
-                <input type="text" value={user.Quantity}/>
-                <input type="text" value={user.Price} />
-                <button onClick={()=>{handlePlus(index)}}>+</button>
-                <button onClick={()=>{handleRemove(index)}}>Remove</button>
-            </div>    
-        )
-      })}
+
+      <div className="maivMap">
+      <div className="overflowDiv">
+          {dummy.map((user, index) => {
+            return (
+              <div className="userRow" key={index}>
+                <span>{index + 1}.</span>
+                <span>{user.title}</span>
+                <span>{user.ProductType}</span>
+                <span>{user.Quantity}</span>
+                <span>{user.Price}</span>
+                <button onClick={() => handlePlus(index)}>+</button>
+                <button onClick={() => handleRemove(index)}>Remove</button>
+             
+              </div>
+            );
+          })}
+           </div>
+        </div>
+  
 
 
+      <div className="CostomerSection">
+          <AddCostomer/>
+          <CartSummary/>
+      </div>
+
+        
     </>
   );
 };

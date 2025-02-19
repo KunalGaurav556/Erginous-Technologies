@@ -57,12 +57,15 @@ const SignUp = () => {
     <div className="Scontainer">
       <div className="signup-container">
         <form className="signup-form">
-          <h2 className="signup-title">Create an Account</h2>
+          <h2 className="signup-title" style={{color:'white', fontSize:'17px'}}>Create an Account</h2>
           <p className="signup-message">
             Join us today and enjoy exclusive benefits!
           </p>
 
           <div className="signup-flex">
+
+
+            
             <label className="signup-label">
               <input
                 type="text"
@@ -125,13 +128,9 @@ const SignUp = () => {
             </label>
           </div>
 
-          <button
-            type="submit"
+          <button  type="submit"
             onClick={handleSubmit}
-            className="signup-button"
-          >
-            Sign Up
-          </button>
+            className="signup-button" class="signUpBtn"> Button </button>
         </form>
       </div>
     </div>

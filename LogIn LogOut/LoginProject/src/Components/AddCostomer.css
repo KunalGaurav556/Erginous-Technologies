@@ -1,0 +1,108 @@
+/* Main Container */
+.addContainer {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: auto;
+    /* background: #f8f9fa; */
+    padding: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  /* Left Box (Form Section) */
+  .addleftBox {
+    /* border: 2px solid blue; */
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .addleftBox:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Title */
+  .addleftBox h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Customer Box */
+  .costomerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input Box Styling */
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 94%;
+  }
+  
+  .inputBox label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  .inputBox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Existing Customer Dropdown */
+  .ExistingCostomer {
+    margin-top: 10px;
+  }
+  
+  .ExistingCostomer select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ExistingCostomer select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Hover Effect on Inputs and Select */
+  .inputBox input:hover,
+  .ExistingCostomer select:hover {
+    border-color: #007bff;
+  }
+  #addCostomerBtn{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-top: 18px;
+    background-color: rgb(106, 194, 106);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: none;
+    font-weight: 600;
+  }
+  

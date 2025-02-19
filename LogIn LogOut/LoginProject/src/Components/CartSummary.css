@@ -1,0 +1,100 @@
+/* Cart Container */
+.cartContainer {
+    /* border: 2px solid blue; */
+    height: 300px;
+    width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .cartContainer:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Cart Summary Title */
+  .cartContainer h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Summary Details */
+  .summary {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .summary p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Button Group */
+  .btnGroup {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .btnGroup button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  #summarySave {
+    background: #007bff;
+    color: white;
+  }
+  
+  #summarySave:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  #summaryApprove {
+    background: #28a745;
+    color: white;
+  }
+  
+  #summaryApprove:hover {
+    background: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Payment Status */
+  .cartContainer p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Radio Buttons */
+  .cartContainer input[type="radio"] {
+    margin: 0 5px;
+    accent-color: #007bff;
+    transform: scale(1.2);
+  }
+  
+  .cartContainer label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+  }
+  

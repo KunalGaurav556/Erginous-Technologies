@@ -1,25 +1,27 @@
 .container{
     /* border: 2px solid red !important; */
     display: flex;
-    width: 99%;
+    /* width: 99%; */
+    height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
     /* align-items: center; */
-    background-color: bisque;    
+    /* background-color: rgb(246, 243, 240);     */
 
 }
 .leftSidebar{
-    border: 2px solid green !important;
+    /* border: 2px solid green !important; */
     width: 285px;
     display: flex;    
     flex-direction: column;
     justify-content: start;
     align-items: start;
     height: 98vh;
-    background-color: gray;
+    background-color: rgb(11, 11, 11);
     color: white;
     /* position: absolute; */
-
+    position: fixed;
+    left: 0px;
     margin: 0;
     ul{
         /* border: 2px solid yellow; */
@@ -48,6 +50,26 @@
 }
 
 .RightSideDashBoard{
-    border: 2px solid blue !important;
-    width: 80%;
+    /* border: 2px solid blue !important; */
+    width: 77%;
+    position: relative;
+    left: 11%;
+    height: auto;
+}
+#img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.profile{
+    /* border: 2px solid red; */
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgb(5, 75, 5);
+    color: rgb(246, 238, 238);
 }

@@ -139,7 +139,7 @@
   .mainContainer{
     /* border: 2px solid red; */
     height: 99vh;  
-    background-color: rgb(235, 232, 232);
+    /* background-color: rgb(235, 232, 232); */
     width: 98%;
     display: flex;
     justify-content: center;
