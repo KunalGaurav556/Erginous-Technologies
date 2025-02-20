@@ -1,0 +1,208 @@
+.dashContainer {
+  /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashContainer input {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .dashContainer input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .dashContainer button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .dashContainer button:hover {
+    background: #0056b3;
+  }
+  
+  /* User List Styling */
+  .userContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+    margin: 2rem auto;
+  }
+  
+  .userRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    flex-wrap: wrap;
+  }
+  
+ 
+  
+  .userRow input {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .userRow button {
+    padding: 8px 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .userRow button:hover {
+    background: #218838;
+  }
+  
+  .userRow button:last-child {
+    background: #dc3545;
+  }
+  
+  .userRow button:last-child:hover {
+    background: #c82333;
+  }
+
+
+
+
+  
+
+  .userRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+  .userRow span {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .userRow button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .userRow button:hover {
+    background: #0056b3;
+  }
+  
+  .userRow button:last-child {
+    background: #dc3545;
+  }
+  
+  .userRow button:last-child:hover {
+    background: #c82333;
+  }
+
+  .overflowDiv{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 95%;
+    overflow-y: scroll;
+  }
+
+  .maivMap{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .CostomerSection{
+    /* border: 2px solid blueviolet; */
+    width: 99%;
+    position: relative;
+    left: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+  }
+
+
+  .add-CartSummary{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .mainDashBoardContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  #dashForm{
+    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  #dltBtn{
+    width: 90px;
+    /* border: 2px solid blue;   */
+  }
+
+
+  
+  

@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import './LoginPage.css'
 import {useNavigate} from 'react-router-dom'
+import * as yup from 'yup';
+import { ToastContainer,toast } from "react-toastify";
 
 const LoginPage = () => {
 
     const navigate = useNavigate();
+    const [emailActive , setEmailActive] = useState(false);
+    const [passwordActive, setPasswordActive] = useState(false);
 
     const [userData,setUserData] = useState({
       email : '',
@@ -16,10 +20,6 @@ const LoginPage = () => {
       const value = e.target.value;
       setUserData({...userData,[name]:value});
     }
-    
-    let Remail = ''
-    let Rpassword = ''
-
 
     const handleLogin = (e)=>{
       e.preventDefault();
@@ -31,13 +31,21 @@ const LoginPage = () => {
 
       if(findData){
         navigate('/home')
+        notifySuccess();
+        emailLogIn.current.style.display='none'
       }
       else{
-        alert('fail');
+        notify();
+        setEmailActive(true)
+        setPasswordActive(true)
       }
       
     }
 
+    const notify = ()=>toast.warn('fill all the section first',{
+      style:{backgroundColor:'red',color:'white'}
+    })
+    const notifySuccess = () => toast.success('SuccessFully LogIn')
 
   return (
     <>
@@ -52,8 +60,9 @@ const LoginPage = () => {
               <path d="M30.853 13.87a15 15 0 0 0-29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0-1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1-4.158-.759V7.187a1 1 0 0 0-2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zM16 22a6 6 0 1 1 6-6 6.006 6.006 0 0 1-6 6z"></path>
             </g>
           </svg>
-          <input placeholder="Enter your Email" className="input" type="email" name="email" onChange={handleLogInChange}/>
+          <input placeholder="Enter your Email"  className="input" type="email" name="email" onChange={handleLogInChange}/>
         </div>
+        {emailActive ? (<span id="emailLogIn">Fill the email section first</span>) : null}
 
         <div className="flex-column">
           <label>Password </label>
@@ -65,6 +74,7 @@ const LoginPage = () => {
           </svg>
           <input placeholder="Enter your Password" className="input" type="password" name="password" onChange={handleLogInChange}/>
         </div>
+          {setPasswordActive ? (<span>Password Section is Empty</span>) : null}
 
         <div className="flex-row">
           <div>
@@ -74,6 +84,7 @@ const LoginPage = () => {
           <span className="span">Forgot password?</span>
         </div>
         <button className="button-submit" onClick={handleLogin}>Log In</button>
+        <ToastContainer/>
         <p className="p">
           Don't have an account? <span className="span" onClick={()=>{navigate('SignUp')}}>Sign Up</span>
         </p>

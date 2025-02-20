@@ -9,7 +9,6 @@ import OrderHistory from './Components/OrderHistory'
 
 
 function App() {
-  const [count, setCount] = useState(0)
   
   return (
     <>
