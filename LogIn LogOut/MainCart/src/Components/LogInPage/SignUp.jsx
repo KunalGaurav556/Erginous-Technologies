@@ -60,6 +60,9 @@ const SignUp = () => {
     localStorage.setItem("SignUpData", JSON.stringify(allData));
   }, [allData]);
 
+
+  
+
   return (
     <>
       <div className="mainSignUp">

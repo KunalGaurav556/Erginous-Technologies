@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Home, User, Settings, LogOut } from "lucide-react";
-import "./Sidebar.css"; // Import CSS file
+import "./Sidebar.css";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Sidebar = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    // setActive(item.name)
+    document.body.style.backgroundColor = "red";
     navigate("/LoginPage");
   };
+
+  const getData = JSON.parse(localStorage.getItem("SignUpData"));
+  // console.log(getData.username);
+
+  const infoToast = () => {
+    toast.info("Your are on Home Page Now", {
+      position: "bottom-left",
+    });
+  };
+
+ 
 
   return (
     <div className="sidebar">
@@ -16,7 +28,7 @@ const Sidebar = () => {
         style={{
           display: "flex",
           gap: "1rem",
-          padding:'1rem'
+          padding: "1rem",
         }}
       >
         <img
@@ -29,26 +41,27 @@ const Sidebar = () => {
             textAlign: "center",
           }}
         />
-        <h2 className="sidebar-title">Kunal</h2>
+        <h2 className="sidebar-title">Admin</h2>
       </div>
 
-      <div
-        className="sidebar-menu"
-        style={{
-          marginTop: "1rem",
-        }}
-      >
-        <button className="menu-item" onClick={()=>{navigate('/homepage')}}>{<Home size={22} />} home</button>
+      <div className="sidebar-menu">
+        <button
+          className="menu-item"
+          style={{backgroundColor:'green'}}
+          onClick={() => {
+            navigate("/homepage"), infoToast();
+          }}
+        >
+          {<Home size={22} />} Home
+        </button>
 
-        <button className="menu-item"  onClick={() => {
-                navigate("/CostomerData");
-              }}>
-          {
-            <User
-              size={22}
-            />
-          }{" "}
-          Costomers
+        <button
+          className="menu-item"
+          onClick={() => {
+            navigate("/CostomerData");
+          }}
+        >
+          {<User size={22} />} Costomers
         </button>
 
         <button className="menu-item">{<Settings size={22} />}Settings</button>

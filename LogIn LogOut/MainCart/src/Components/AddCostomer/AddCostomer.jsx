@@ -21,6 +21,7 @@ const AddCostomer = () => {
     toast.error("Fill all the Sections First", {
       style: { color: "red" },
       position: "bottom-left",
+      autoClose:1000
     });
   };
 

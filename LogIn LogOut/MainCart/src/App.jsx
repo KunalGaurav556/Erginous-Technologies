@@ -7,6 +7,7 @@ import SignUp from './Components/LogInPage/SignUp'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import LogInPage from './Components/LogInPage/LogInPage'
 import CData from './Components/CostomerData/CData'
+import PaymentPage from './Components/Payment/PaymentPage'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/SignUpPage' exact element={<SignUp/>}></Route>
           <Route path='/homepage' exact element={<HomePage/>}></Route>
           <Route path='/CostomerData' exact element={<CData/>}></Route>
+          <Route path='/PaymentPage' exact element={<PaymentPage/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

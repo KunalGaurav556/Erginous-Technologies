@@ -3,7 +3,7 @@
     height: 100vh;
     width: 250px;
     /* background: linear-gradient(to bottom, #4f46e5, #7c3aed); */
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
@@ -85,4 +85,7 @@
       font-size: 1.3rem;
     }
   }
-  
+
+  .sidebar-menu button:focus{
+    background-color: red;
+  }
