@@ -18,7 +18,7 @@ const DashBoard = () => {
 
   const [dummy, setDummy] = useState([]);
   const [isPopUp, setPopUp] = useState(false);
-  const [deleteIndex, setDeleteIndex] = useState(null); // Tracks which item is being deleted
+  const [deleteIndex, setDeleteIndex] = useState(null); 
 
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("dashBoardData"));
@@ -197,15 +197,15 @@ const DashBoard = () => {
       {deleteIndex !== null && (
         <div className="custom-card" style={{
           width:'250px',
-          position:'absolute',
+          position:'fixed',
           height:'190px',
-          backgroundColor:'burlywood',
+          backgroundColor:'yellow',
           borderRadius:'15px',
           color:'white',
           fontSize:'19px',
           padding:'1rem',
-          top:"20%",
-          left:'30%',
+          top:"29%",
+          left:'42%',
           display:'flex',
           justifyContent:'center',
           // alignItems:'center',
@@ -222,7 +222,8 @@ const DashBoard = () => {
                 fontSize:'14px',
                 borderRadius:'15px',
                 cursor:'pointer',
-                width:'100px'
+                width:'100px',
+                color:'white'
               }}
               >Cancel</button>
             <button className="custom-primary" onClick={handleDelete}
@@ -232,7 +233,8 @@ const DashBoard = () => {
               fontSize:'14px',
               borderRadius:'15px',
               cursor:'pointer',
-              width:'100px'
+              width:'100px',
+              color:'white'
             }}
             >Delete</button>
           </div>

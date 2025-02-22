@@ -4,17 +4,17 @@ import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
-
   const navigate = useNavigate();
-
   const [loginData, setLoginData] = useState({
-    email: "",
+    email: "",  
     password: "",
   });
+  
 
   const invalidPassword = ()=>toast.warn('Invalid email or Password',{
     style:{backgroundColor:'red',color:'white'}
   });
+
   const succesFullLogin = ()=>toast.success("Login Succesfull")
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,10 +49,21 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="mainLogin">
+
+    <div className="mainLogin bgimageLogin">
       <div className="login-container">
         <div className="login-box">
-          <h2 className="login-title">Welcome Back!</h2>
+          <img src="https://png.pngtree.com/png-clipart/20231004/ourmid/pngtree-flying-parrot-bird-transparent-background-png-image_10192904.png" alt=""
+            style={{
+              width:'200px',
+              height:'200px',
+              position:'absolute',
+              left:'20rem',
+              top:'-10px',
+              zIndex:'0'
+            }}
+          />
+          <h2 className="login-title" style={{color:'green',fontFamily:'cursive'}}>Welcome Back !</h2>
           <form className="login-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="email" className="form-label">
@@ -84,7 +95,7 @@ const LoginPage = () => {
                 required
               />
             </div>
-            <button type="submit" className="login-button">
+            <button type="submit" className="btn login-btn" style={{backgroundColor:'green'}}>
               Login
             </button>
           </form>

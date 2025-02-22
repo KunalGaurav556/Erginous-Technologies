@@ -91,11 +91,11 @@
   }
   
   .userRow button:last-child {
-    background: #dc3545;
+    /* background: #dc3545; */
   }
   
   .userRow button:last-child:hover {
-    background: #c82333;
+    /* background: #c82333; */
   }
 
 
@@ -145,11 +145,11 @@
   }
   
   .userRow button:last-child {
-    background: #dc3545;
+    /* background: #dc3545; */
   }
   
   .userRow button:last-child:hover {
-    background: #c82333;
+    /* background: #c82333; */
   }
 
   .overflowDiv{
@@ -204,11 +204,12 @@
   }
 
   input:required{
-    border: 0.5px solid rgb(1, 1, 1);
+    border: 0.5px solid rgb(2, 133, 57);
   }
+
   input:focus:invalid{
-    border: 0.1px solid red;
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px 1px 9px 1px pink;
+    outline: red;
   }
 
 

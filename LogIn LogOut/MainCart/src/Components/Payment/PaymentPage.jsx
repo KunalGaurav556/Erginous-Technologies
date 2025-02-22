@@ -7,7 +7,13 @@ import { toast, ToastContainer } from "react-toastify";
 const PaymentPage = () => {
 
     const errorToast = ()=>{toast.error('Your Account is Not Valid')}
-    const warningToast = ()=>{toast.warn('Work in Progress')}
+    const warningToast = ()=>{toast.warn('Work in Progress',{
+      style:{
+        backgroundColor:'green',
+        color:'yellow',
+        fontWeight:'600'
+      }
+    })}
 
     const handleSubmit = (e) =>{
         e.preventDefault()
@@ -77,7 +83,7 @@ const PaymentPage = () => {
                     />
                   </div>
                 </div>
-                <button class="purchase--btn" style={{cursor:'pointer'}} >Checkout</button>
+                <button class="purchase--btn" style={{cursor:'pointer',height:'50px'}} >Checkout</button>
                 <button type="button"
                   style={{
                     backgroundColor: "blue",
@@ -86,7 +92,7 @@ const PaymentPage = () => {
                     borderRadius: "12px",
                     fontWeight: "600",
                     cursor:'pointer',
-                    fontSize:'14px'
+                    fontSize:'14px',
                   }}
                   onClick={()=>{warningToast()}}
                 >

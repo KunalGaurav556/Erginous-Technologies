@@ -1,6 +1,6 @@
-/* From Uiverse.io by nikk7007 */ 
+
 .btn {
-  --color: #00A97F;
+  --color: #8409ff;
   --color2: rgb(10, 25, 30);
   padding: 0.8em 1.75em;
   background-color: transparent;
@@ -17,6 +17,7 @@
   text-transform: uppercase;
   color: var(--color);
  }
+
  
  .btn::after, .btn::before {
   content: '';

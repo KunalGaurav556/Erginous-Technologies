@@ -56,7 +56,7 @@ const AddCostomer = () => {
       number: "",
     });
 
-    SuccesfullyAdded();
+    // SuccesfullyAdded();
     setPopUp(true);
 
     setTimeout(() => {
@@ -98,7 +98,7 @@ const AddCostomer = () => {
 
           <button
             className="btn"
-            style={{ backgroundColor: "gray", color: "white", fontWeight: "600",marginTop:'2rem' }}
+            style={{ backgroundColor: "black", color: "white", fontWeight: "600",marginTop:'2rem' }}
             onClick={addCostomer}
            >
             Add Customer
@@ -107,7 +107,7 @@ const AddCostomer = () => {
       </div>
 
       {isPopUp && (
-        <div className="card">
+        <div className="card" style={{paddingBottom:'1rem'}}>
           <button className="dismiss" type="button" onClick={() => setPopUp(false)}>
             ×
           </button>

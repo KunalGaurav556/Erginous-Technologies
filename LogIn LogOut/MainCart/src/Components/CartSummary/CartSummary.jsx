@@ -13,7 +13,8 @@ const CartSummary = () => {
     }
     const infoToast = ()=>{toast.info("Work in Progress",{
       position:'bottom-right',
-      autoClose:1000
+      autoClose:1000,
+      style:{color:'blue'}
     })}
     let totalPrice = 0
     let totalQuantity = 0;

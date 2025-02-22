@@ -85,7 +85,3 @@
       font-size: 1.3rem;
     }
   }
-
-  .sidebar-menu button:focus{
-    background-color: red;
-  }

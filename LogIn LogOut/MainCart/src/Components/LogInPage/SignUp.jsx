@@ -31,7 +31,12 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    if (!formData.username || !formData.email || !formData.password || !formData.confirmPassword) {
+    if (
+      !formData.username ||
+      !formData.email ||
+      !formData.password ||
+      !formData.confirmPassword
+    ) {
       warnToastPassword();
       return;
     }
@@ -52,7 +57,7 @@ const SignUp = () => {
       password: "",
       confirmPassword: "",
     });
-    navigate('/LoginPage')
+    navigate("/LoginPage");
   };
 
   // Save allData to localStorage whenever it updates
@@ -60,68 +65,88 @@ const SignUp = () => {
     localStorage.setItem("SignUpData", JSON.stringify(allData));
   }, [allData]);
 
-
-  
-
   return (
     <>
-      <div className="mainSignUp">
-        <div className="signup-container">
-          <div className="signup-box">
-            <h2>Sign Up</h2>
+      <div class="container" style={{
+        width:'99%'
+      }}>
+        <div className="mainSignUp">
+          <div className="signup-container">
+            <div className="signup-box">
+            <img src="https://png.pngtree.com/png-clipart/20231004/ourmid/pngtree-flying-parrot-bird-transparent-background-png-image_10192904.png" alt=""
+            style={{
+              width:'200px',
+              height:'200px',
+              position:'absolute',
+              right:'20rem',
+              bottom:'21.9rem',
 
-            <form onSubmit={handleSignUp}>
-              <div className="input-group">
-                <input
-                  type="text"
-                  name="username"
-                  value={formData.username}
-                  placeholder="Username"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+            }}
+          />
+              <h2 style={{color:'green', fontFamily:"cursive",fontWeight:'600'}}>Create Your Account</h2>
 
-              <div className="input-group">
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  placeholder="Email"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+              <form onSubmit={handleSignUp}>
+                <div className="input-group">
+                  <input
+                    type="text"
+                    name="username"
+                    value={formData.username}
+                    placeholder="Username"
+                    onChange={handleChange}
+                    required
+                    id="signInput"
+                  />
+                </div>
 
-              <div className="input-group">
-                <input
-                  type="password"
-                  name="password"
-                  value={formData.password}
-                  placeholder="Password"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+                <div className="input-group">
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    placeholder="Email"
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
-              <div className="input-group">
-                <input
-                  type="password"
-                  name="confirmPassword"
-                  value={formData.confirmPassword}
-                  placeholder="Confirm Password"
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+                <div className="input-group">
+                  <input
+                    type="password"
+                    name="password"
+                    value={formData.password}
+                    placeholder="Password"
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
-              <button type="submit" className="btn signup-btn">
-                Sign Up
-              </button>
-              <button type="button" className="btn login-btn" onClick={() => navigate("/LoginPage")}>
-                Login
-              </button>
-            </form>
+                <div className="input-group">
+                  <input
+                    type="password"
+                    name="confirmPassword"
+                    value={formData.confirmPassword}
+                    placeholder="Confirm Password"
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <button type="submit" className="btn signup-btn">
+                  Sign Up
+                </button>
+                <button
+                  type="button"
+                  className="btn login-btn"
+                  onClick={() => navigate("/LoginPage")}
+                  style={{
+                    backgroundColor:'black',
+                    color:'white'
+                  }}
+                >
+                  Login
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Home, User, Settings, LogOut } from "lucide-react";
 import "./Sidebar.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -72,6 +73,7 @@ const Sidebar = () => {
       </div>
 
       <footer className="sidebar-footer">© 2025 MyApp</footer>
+      <SocialIcons/>
     </div>
   );
 };
