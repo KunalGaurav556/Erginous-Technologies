@@ -81,7 +81,8 @@
 }
 
 .signup-btn {
-  background: #4ca1af;
+  /* background: #4ca1af; */
+  background-color: green;
   color: white;
   font-weight: 600;
 }

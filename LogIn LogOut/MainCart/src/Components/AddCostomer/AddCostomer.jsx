@@ -68,6 +68,7 @@ const AddCostomer = () => {
     <>
       <ToastContainer />
       <div className="addContainer">
+        <form action="">
         <div className="addleftBox">
           <h4>Add Customer</h4>
           <div className="costomerBox">
@@ -96,7 +97,7 @@ const AddCostomer = () => {
             </div>
           </div>
 
-          <button
+          <button type="submit"
             className="btn"
             style={{ backgroundColor: "black", color: "white", fontWeight: "600",marginTop:'2rem' }}
             onClick={addCostomer}
@@ -104,6 +105,7 @@ const AddCostomer = () => {
             Add Customer
           </button>
         </div>
+        </form>
       </div>
 
       {isPopUp && (
