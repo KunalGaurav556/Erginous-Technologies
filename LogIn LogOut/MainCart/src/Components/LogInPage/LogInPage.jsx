@@ -62,7 +62,7 @@ const LoginPage = () => {
               position:'absolute',
               left:'20rem',
               top:'-10px',
-              zIndex:'0'
+              // zIndex:'0'
             }}
           />
           <h2 className="login-title" style={{color:'green',fontFamily:'cursive'}}>Welcome Back !</h2>
