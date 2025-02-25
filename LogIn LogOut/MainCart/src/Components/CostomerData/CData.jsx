@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import './CData.css'
 import Sidebar from '../SideBar/SideBar'
 
