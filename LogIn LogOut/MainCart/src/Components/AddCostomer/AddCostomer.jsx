@@ -25,7 +25,6 @@ const AddCostomer = () => {
     });
   };
 
-  // Load data from localStorage when component mounts
   useEffect(() => {
     const storedData = localStorage.getItem("addCostomerData");
     if (storedData) {

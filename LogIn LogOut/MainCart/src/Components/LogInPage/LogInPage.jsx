@@ -15,6 +15,8 @@ const LoginPage = () => {
     style:{backgroundColor:'red',color:'white'}
   });
 
+  const userNotFound = ()=>{toast.error('User not Found')}
+
   const succesFullLogin = ()=>toast.success("Login Succesfull")
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -42,7 +44,7 @@ const LoginPage = () => {
         invalidPassword();
       }
     } else {
-      alert("No registered users found!");
+      userNotFound()
     }
 
    

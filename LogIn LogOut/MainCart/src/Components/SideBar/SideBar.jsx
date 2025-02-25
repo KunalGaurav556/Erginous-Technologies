@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Home, User, Settings, LogOut } from "lucide-react";
 import "./Sidebar.css";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { toast,ToastContainer } from "react-toastify";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 const Sidebar = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    document.body.style.backgroundColor = "red";
+    // document.body.style.backgroundColor = "red";
     navigate("/LoginPage");
   };
 
@@ -20,6 +20,7 @@ const Sidebar = () => {
       position: "bottom-left",
     });
   };
+
 
  
 
@@ -65,7 +66,7 @@ const Sidebar = () => {
           {<User size={22} />} Costomers
         </button>
 
-        <button className="menu-item">{<Settings size={22} />}Settings</button>
+        <button className="menu-item">{<Settings size={22}/>}Settings</button>
 
         <button className="menu-item" onClick={() => handleClick()}>
           {<LogOut size={22} />}Log Out
