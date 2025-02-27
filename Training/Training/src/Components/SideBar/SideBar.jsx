@@ -60,10 +60,10 @@ const Sidebar = () => {
         <button
           className="menu-item"
           onClick={() => {
-            navigate("/CostomerData");
+            navigate("/studentPage");
           }}
         >
-          {<User size={22} />} Students
+          {<User size={22} />}New Students
         </button>
 
         <button className="menu-item">{<Settings size={22}/>}Schedule</button>
