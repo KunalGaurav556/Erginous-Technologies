@@ -3,9 +3,10 @@
 /* Button Styling */
 .btn {
     background: linear-gradient(135deg, #42f58d, #1976d2);
-    color: white;
+    color: rgb(202, 124, 124);
+    border: 4px solid rgb(0, 255, 21);
     border: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;

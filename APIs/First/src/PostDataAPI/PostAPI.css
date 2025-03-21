@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #f3f4f6, #e3e4e8);
+    background-color: blue;
   }
   
   /* Form Card */
@@ -15,7 +15,7 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 350px;
     text-align: center;
   }
   
@@ -50,7 +50,7 @@
   
   /* Input Focus Effect */
   .post-input:focus, .post-textarea:focus {
-    border-color: #1976d2;
+    border-color: #d21919;
     box-shadow: 0px 0px 8px rgba(25, 118, 210, 0.2);
     outline: none;
   }
@@ -81,12 +81,10 @@
     transform: scale(0.98);
     box-shadow: 0px 3px 6px rgba(25, 118, 210, 0.2);
   }
-  
-  /* Responsive Design */
-  @media (max-width: 450px) {
-    .post-card {
-      width: 90%;
-      padding: 20px;
-    }
+
+  .post-container{
+    background-color: blue;
   }
+
+  
   

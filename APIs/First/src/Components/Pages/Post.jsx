@@ -30,7 +30,7 @@ const Post = () => {
 
   return (
     <>
-    <div className="headDiv"><h2 className="heading">Displaying Post Data of JSON Placeholder</h2></div>
+    <div className="headDiv"><h2 className="heading">Bringle Data</h2></div>
       <div className="mainContainer">
         
 

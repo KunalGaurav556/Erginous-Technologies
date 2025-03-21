@@ -5,7 +5,7 @@ import Post from './Pages/Post'
 const Home = () => {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Post/>
       
     </>

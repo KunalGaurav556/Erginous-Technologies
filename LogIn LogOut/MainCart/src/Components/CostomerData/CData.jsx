@@ -1,9 +1,9 @@
 import './CData.css'
 import Sidebar from '../SideBar/SideBar'
+import React from 'react'
 
 const CData = () => {
     const getData = JSON.parse(localStorage.getItem('addCostomerData'))
-
   return (
     <>
        <div className="mainCostomerDataPage">

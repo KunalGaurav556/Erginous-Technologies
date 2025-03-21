@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
-import axios from "axios";
-import "./Comments.Modular.css";
+import axios from "axios"
 
 const Comments = () => {
   const [cmts, setcmts] = useState([]);
